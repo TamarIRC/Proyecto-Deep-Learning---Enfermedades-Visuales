@@ -22,51 +22,10 @@ execute:
   warning: false          # Oculta los mensajes de advertencia de R/Python
 ---
 
-# 1. Introducción {background-color="#43464B"}
+{{< include 01_Introducción_proyecto.qmd >}}
 
-<!-- Usar un solo '#' crea una diapositiva de título de sección -->
+{{< include 02_Estado_del_Arte.qmd >}}
 
-## Contexto del Problema
+{{< include 03_Hipótesis_y_Objetivos.qmd >}}
 
-<!-- Usar dos '##' crea una diapositiva de contenido normal -->
-
-Aquí es donde los encargados de la teoría pueden comenzar a escribir. Quarto usa Markdown, así que hacer listas es muy sencillo:
-
-- Punto importante sobre Deep Learning.
-- Por qué elegimos esta arquitectura.
-- Objetivos de la presentación.
-
-## Marco Teórico
-
-- **Concepto 1:** Definición en negrita.
-- *Concepto 2:* Definición en cursiva.
-
-> "Una cita importante de algún paper que hayan investigado para el proyecto."
-
-------------------------------------------------------------------------
-
-<!-- Tres guiones '---' fuerzan una nueva diapositiva sin necesidad de ponerle título -->
-
-Aquí continúa la explicación teórica...
-
-# 2. Arquitectura de la Red
-
-## Capas y Parámetros
-
-(Espacio para que el segundo o tercer compañero agregue su parte teórica).
-
-# 3. Aplicación Práctica {background-color="#003366"}
-
-<!-- Cambio de color de fondo para indicar que pasamos a la demostración -->
-
-## Carga de Datos y Preprocesamiento
-
-Aquí es donde entra tu cuarto compañero, el encargado de la práctica. Puede insertar bloques de código (chunks) directamente de R o Python. \`\`\`{python} #\| echo: true #\| eval: false
-
-# Ejemplo de código del compañero encargado de la práctica
-
-import tensorflow as tf from tensorflow import keras
-
-# Construcción de un modelo secuencial simple
-
-modelo = keras.Sequential(\[ keras.layers.Dense(128, activation='relu'), keras.layers.Dense(10, activation='softmax')\])
+{{< include 04_Implementación_Preliminar.qmd >}}
