@@ -32,3 +32,49 @@ $progress-color: $theme-purple;
 .standout-slide h1, .standout-slide h2, .standout-slide h3 {
   color: white !important;
 }
+
+// --- ESTILOS PARA BLOQUES TIPO WILDCAT ---
+
+// 1. Bloque Principal (Morado)
+.nu-block {
+  border: 1px solid $theme-purple;
+  border-radius: 6px;
+  padding: 1.2em 1em 1em 1em;
+  margin: 1.5em 0;
+  position: relative;
+}
+
+.nu-block .block-title {
+  position: absolute;
+  top: -0.7em;
+  left: 1em;
+  background-color: $body-bg; /* Usa el color de fondo para "cortar" la línea */
+  padding: 0 10px;
+  color: $theme-purple;
+  font-size: 0.9em;
+}
+
+// 2. Bloque de Alerta (Naranja)
+.nu-alert {
+  border-color: #d9822b;
+}
+.nu-alert .block-title {
+  color: #d9822b;
+}
+
+// 3. Bloque de Ejemplo (Verde)
+.nu-example {
+  border-color: #0f9d58;
+}
+.nu-example .block-title {
+  color: #0f9d58;
+}
+
+// Quita el fondo gris y el borde extra de los bloques de código 
+// cuando están dentro de nuestros bloques personalizados
+.nu-block pre.sourceCode {
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0;
+  padding: 0;
+}
