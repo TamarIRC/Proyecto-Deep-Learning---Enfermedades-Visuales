@@ -1,3 +1,5 @@
-# Introducción al Proyecto
+# Introducción al Problema {background-color="#4e2a84"}
 
-Esta es la parte que escribirá mi primer compañero.
+## Contexto de la base de datos
+
+Aquí va el texto normal...

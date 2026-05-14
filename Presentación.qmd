@@ -3,18 +3,17 @@ title: "Proyecto Final: Deep Learning"
 subtitle: "Aplicación de Redes Neuronales"
 author:
   - name: "Tamar"
-    affiliations: "Teoría"
+    affiliations: "Universidad de Santiago de Chile"
   - name: "Benjamín"
-    affiliations: "Teoría"
+    affiliations: ""
   - name: "Richard"
-    affiliations: "Teoría"
-  - name: "Compañero 4"
-    affiliations: "Práctica y Modelado"
+    affiliations: ""
 format: 
   revealjs:
-    theme: dark           # Otros temas: simple, sky, solarized, moon
-    slide-number: true    # Muestra el número de diapositiva (ej: 1/15)
-    transition: fade      # Transición suave entre diapositivas
+    theme: [default, tema_custom.scss] # Aquí llamamos a tu nuevo diseño
+    slide-number: c/t                  # Muestra el número como fracción (current/total)
+    progress: true                     # Agrega la barra de progreso inferior
+    transition: fade    
     chalkboard: true      # ¡Genial para exponer! Te permite "dibujar" sobre las diapositivas
     preview-links: auto   # Abre enlaces web en una ventana flotante dentro de la presentación
 execute:
