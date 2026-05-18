@@ -14,7 +14,7 @@ En esto consiste el Estado del Arte según nuestras fuentes [^1]
 
 El diagnóstico dependía de la observación clínica directa y bocetos hechos a mano.
 
-Hermann von Helmholz crea el oftalmoscopio en 1851 que permitia visualizar directamente la retina viva humana por primera vez. [^2]
+Hermann von Helmholz crea eel oftalmoscopio en 1851 que permitia visualizar directamente la retina viva humana por primera vez. [^2]
 
 [^2]: @irodi_evolution_2026
 
@@ -40,7 +40,7 @@ Se estandarizaron el uso de algoritmos clasicos como Maquinas de Soporte Vectori
 
 Los modelos dependían de la extracción manual de características el cual era el problema principal de esta etapa.
 
-4. Implementaciones modernas de la actualidad (2015-Presente)
+4.  Implementaciones modernas de la actualidad (2015-Presente)
 
 Dominada por el Deep Learning y las Redes Neuronales Convolucionales (CNN) [^5]
 
