@@ -4,7 +4,7 @@ bibliography: references.bib
 
 # Introducción al Problema {background-color="#4e2a84"}
 
-## Contexto de la base de datos {.smaller}
+## Contexto de la base de datos {.smaller .scrollable}
 
 Las Redes Neuronales Convolucionales han demostrado un 98% de precisión en la detección de Retinopatía Diabética [^1].
 
@@ -25,3 +25,21 @@ library(ggplot2)
 # Aquí va tu código de verdad
 ```
 :::
+
+a
+
+a
+
+a
+
+a
+
+a
+
+a
+
+a
+
+a
+
+a

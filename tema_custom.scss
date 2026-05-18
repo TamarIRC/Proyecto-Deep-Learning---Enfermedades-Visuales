@@ -78,3 +78,40 @@ $progress-color: $theme-purple;
   margin: 0;
   padding: 0;
 }
+
+
+
+
+// --- ESTILOS PARA SCROLLBAR MINIMALISTA ---
+
+// 1. Estirar el contenedor para llevar la barra al borde
+.reveal .scrollable {
+  /* Estas dos líneas son la magia: estiran la caja a la derecha y empujan el texto de vuelta */
+  margin-right: -200px; 
+  padding-right: 200px !important; 
+  
+  /* Soporte para Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #b3a3c4 transparent; 
+}
+
+// 2. Soporte para Chrome, Edge y Safari (Webkit)
+.reveal .scrollable::-webkit-scrollbar {
+  width: 6px; /* Barra súper delgadita */
+}
+
+.reveal .scrollable::-webkit-scrollbar-track {
+  background: transparent; /* La "pista" por donde baja la barra es invisible */
+  margin: 15px 0; /* Aire arriba y abajo para que no choque con los bordes */
+}
+
+.reveal .scrollable::-webkit-scrollbar-thumb {
+  background-color: #b3a3c4; /* Morado tenue / grisáceo por defecto */
+  border-radius: 10px; /* Bordes redondeados y elegantes */
+}
+
+.reveal .scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #4e2a84; /* Morado oscuro institucional al pasar el mouse */
+}
+
+
