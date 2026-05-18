@@ -10,16 +10,46 @@ En esto consiste el Estado del Arte según nuestras fuentes [^1]
 
 [^1]: @sarhan_machine_2020
 
-asda
+1.  Era de la Observación Directa (1830s-1950s)
 
-a
+El diagnóstico dependía de la observación clínica directa y bocetos hechos a mano.
 
-a
+Hermann von Helmholz crea el oftalmoscopio en 1851 que permitia visualizar directamente la retina viva humana por primera vez. [^2]
 
-a
+[^2]: @irodi_evolution_2026
 
-a
+Previamente los medicos dibujaban a mano las alteraciones maculares de sus pacientes.
 
-a
+2.  Primeras implementaciones formales y técnicas (1880s - 1990s)
 
-a
+En 1886 se publico la primera imagen en vivo la fotografia del fondo del ojo.
+
+En 1961 surgio la angiografia con fluoresceína y en 1979 surgio la oftalmoscopia láser de barrido que eran tecnicas mas formales para el análisis vascular.
+
+En la década de 1990 ocurrio la transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
+
+3.  Implementaciones computacionales serias (2000s-2015)
+
+Surgieron los sistemas de diagnóstico asistido por computadora basados en Machine Learning tradicional.
+
+Se estandarizaron el uso de algoritmos clasicos como Maquinas de Soporte Vectorial (SVM), Random Forest y K-means. [^3] [^4]
+
+[^3]: @sarki_automatic_2020
+
+[^4]: @sarhan_machine_2020
+
+Los modelos dependían de la extracción manual de características el cual era el problema principal de esta etapa.
+
+4. Implementaciones modernas de la actualidad (2015-Presente)
+
+Dominada por el Deep Learning y las Redes Neuronales Convolucionales (CNN) [^5]
+
+[^5]: @perdomo_charry_systematic_2019
+
+Desde 2016 a partir de decenas de miles de imágenes las investigaciones publicaron modelos que igualaban o superaban a los especialistas humanos en la detección de patologías como la retinopatía diabetica, glaucoma y degeneración macular.[^6]
+
+[^6]: @ting_development_2017
+
+En la actualidad se incluye el uso de Transfer Learning para sortear la escasez de datos médicos.
+
+Según las investigaciones más recientes las barreras se empujan hacia la interpretabilidad del modelo, el uso de Modelos Fundacionales generalistas y el diseño de IA capaz de predecir la progresión longitudinal de la pérdida de visión.
