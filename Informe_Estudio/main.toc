@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Planteamiento del problema}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Justificación: Cual es la importancia de resolver el problema}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Estado del Arte}{4}{section.2}%
+\contentsline {section}{\numberline {3}Hipótesis y Objetivos}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Objetivo General}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Objetivos Específicos}{5}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Implementación Preliminar}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Identificación}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Filtrar}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Entorno y Librerías}{6}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Marco Teórico}{6}{section.5}%
+\contentsline {section}{\numberline {6}Discusión de Resultados}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Comparación de desempeño}{6}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Conclusiones y Trabajo Futuro}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Conclusiones}{6}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Trabajo Futuro}{6}{subsection.7.2}%
