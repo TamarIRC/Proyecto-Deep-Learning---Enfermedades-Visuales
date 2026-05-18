@@ -52,4 +52,4 @@ Desde 2016 a partir de decenas de miles de imágenes las investigaciones publica
 
 En la actualidad se incluye el uso de Transfer Learning para sortear la escasez de datos médicos.
 
-Según las investigaciones más recientes las barreras se empujan hacia la interpretabilidad del modelo, el uso de Modelos Fundacionales generalistas y el diseño de IA capaz de predecir la progresión longitudinal de la pérdida de visión.
+Según las investigaciones más recientes las barreras se empujan hacia la interpretabilidad del modelo, el uso de Modelos Fundacionales generalistas y el diseño de IA el cual es capaz de predecir la progresión longitudinal de la pérdida de visión.
