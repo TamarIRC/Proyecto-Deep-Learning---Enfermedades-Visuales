@@ -19,6 +19,7 @@ format:
 execute:
   echo: true              # Muestra el código en las diapositivas por defecto
   warning: false          # Oculta los mensajes de advertencia de R/Python
+bibliography: references.bib
 ---
 
 {{< include 01_Introducción_proyecto.qmd >}}
