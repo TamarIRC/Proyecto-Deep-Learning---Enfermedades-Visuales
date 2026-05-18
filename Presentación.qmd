@@ -3,9 +3,9 @@ title: "Proyecto Final: Deep Learning"
 subtitle: "Aplicación de Redes Neuronales"
 author:
   - name: "Tamar"
-    affiliations: "Universidad de Santiago de Chile"
-  - name: "Benjamín"
     affiliations: ""
+  - name: "Benjamín"
+    affiliations: "Universidad de Santiago de Chile"
   - name: "Richard"
     affiliations: ""
 format: 

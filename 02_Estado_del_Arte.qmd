@@ -1,5 +1,25 @@
+---
+bibliography: references.bib
+---
+
 # Estado del Arte {background-color="#4e2a84"}
 
-## Estado del Arte
+## Estado del Arte {.scrollable}
 
-Esta es la parte que escribirá mi Segundo compañero
+En esto consiste el Estado del Arte según nuestras fuentes [^1]
+
+[^1]: @sarhan_machine_2020
+
+asda
+
+a
+
+a
+
+a
+
+a
+
+a
+
+a
