@@ -1,0 +1,171 @@
+\documentclass[12pt, a4paper]{article}
+
+% --- PAQUETES BÁSICOS ---
+\usepackage[utf8]{inputenc}
+\usepackage[spanish, es-tabla]{babel} % Idioma español
+\usepackage{graphicx} % Para insertar imágenes y logos
+\usepackage{geometry} % Para configurar márgenes
+\geometry{left=2.5cm, right=2.5cm, top=3cm, bottom=3cm}
+\usepackage{hyperref} % Para índices y enlaces clickeables
+\usepackage{float} % Para forzar la posición de las imágenes
+\usepackage{xcolor}   % Colores para el código
+\usepackage{booktabs} % Tablas estéticas
+\usepackage[hidelinks]{hyperref} % Hipervínculos
+\usepackage{amsmath}  % Para fórmulas matemáticas
+\usepackage{amssymb}  % Símbolos matemáticos
+
+% --- CONFIGURACIÓN DE LA BIBLIOGRAFÍA (EL MÉTODO MÁS SENCILLO) ---
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{referencias.bib} % Aquí llamas a tu archivo .bib
+
+% --- INICIO DEL DOCUMENTO ---
+\begin{document}
+
+% --- PORTADA ---
+\begin{titlepage}
+    \centering
+    % LOGO: Lógica condicional para evitar errores si falta la imagen
+    \vspace{1cm}
+    \IfFileExists{USACH-PNG.png}{
+        \includegraphics[width=0.6\textwidth]{USACH-PNG.png}
+    }{
+        \framebox{\parbox{0.6\textwidth}{\centering \vspace{1cm} \textbf{Imagen: USACH-PNG.png} \\ \small (No encontrada en compilación, verificar nombre) \vspace{1cm}}}
+    } \\ 
+    
+    \vspace{1cm}
+    
+    {\Large \textbf{UNIVERSIDAD DE SANTIAGO DE CHILE} \par}
+    {\large Facultad de Ciencia \par}
+    {\large Departamento de Matemática y Ciencia de la Computación \par}
+    {\large Ingeniería Estadística \par}
+    \vspace{2cm}
+    
+    {\Large \textbf{Estudio Personal Modelos de Deep Learning - Clasificación de imágenes sobre Enfermedades Oculares.} \par}
+    \vspace{1.5cm}
+    
+    {\normalsize Santiago, Chile \par}
+    {\normalsize \today \par} % Pone la fecha actual automáticamente
+    \vspace{2cm}
+    
+    \begin{flushleft}
+        \textbf{Integrantes:} \\
+        Benjamin Contreras Jaramillo \\
+        Richard Escobar Riquelme \\
+        Tamar Rojas Castillo\\
+        \vspace{0.5cm}
+        \textbf{Profesor:} \\
+        Francisco Plaza Vega \\
+        \vspace{0.5cm}
+        \textbf{Ayudante:} \\
+         No hay :( \\
+    \end{flushleft}
+\end{titlepage}
+
+% --- ÍNDICE ---
+\newpage
+\tableofcontents
+\newpage
+
+% --- CUERPO DEL DOCUMENTO ---
+
+\section{Introducción}
+
+
+\subsection{Planteamiento del problema}
+Las enfermedades oculares como el glaucoma, la retinopatía diabética, las cataratas y la degeneración macular son las principales causas de discapacidad visual y ceguera a nivel mundial. Con el envejecimiento de la población y el aumento exponencial de enfermedades sistémicas como la diabetes, se espera que la cantidad de pacientes que requieran atención oftalmológica crezca drásticamente en los próximos años.\\
+
+Actualmente, el diagnóstico de estas patologías depende de exámenes clínicos y del análisis manual de imágenes (como el fondo de ojo). Sin embargo, este enfoque tradicional presenta grandes debilidades: consume mucho tiempo, es propenso a una alta variabilidad de diagnóstico entre distintos médicos, y se ve severamente limitado por la escasez de oftalmólogos especialistas, especialmente en zonas rurales o vulnerables.\\
+
+Frente a esta crisis, el Deep Learning, en particular las Redes Neuronales Convolucionales (CNN), ofrece una solución escalable para automatizar y agilizar estos diagnósticos. No obstante, el desarrollo de esta tecnología choca con un obstáculo técnico crítico: la falta de grandes bases de datos médicas. A diferencia de otros campos, recopilar y etiquetar imágenes clínicas requiere tiempo y anotaciones manuales de médicos expertos, lo que lo hace un proceso muy costoso. Como consecuencia, entrenar redes neuronales profundas desde cero con muestras limitadas.\\
+
+En cuanto a ODIR, esta base de datos contiene imágenes de 5.000 pacientes. Esto se  puede considerar un conjunto pequeño. Como referencia, bases de datos generales de imágenes (como ImageNet) superan los 10 millones de ejemplos.\\
+
+El problema real con ODIR surge al dividir esos datos en 8 categorías. Mientras que hay miles de imágenes de retinas "normales" o con "diabetes", enfermedades como el glaucoma, las cataratas o la degeneración macular tienen apenas entre 260 y 290 ejemplos cada una.
+.
+
+\subsection{Justificación: Cual es la importancia de resolver el problema}
+
+Resolver esta problemática es de vital importancia clínica y operativa. Con el rápido envejecimiento poblacional y la creciente prevalencia de enfermedades sistémicas como la diabetes, los sistemas de salud enfrentan una demanda sin precedentes de tamizaje oftalmológico. La detección temprana mediante exámenes como las imágenes de fondo de ojo es a menudo el único mecanismo efectivo para diagnosticar a tiempo y prevenir la pérdida irreversible de la visión. Sin embargo, el análisis manual de estas imágenes crea cuellos de botella insostenibles. El desarrollo de modelos de Deep Learning se justifica, por tanto, no como un intento de reemplazar al médico especialista, sino como una herramienta de triaje automatizado que permite optimizar los tiempos de diagnóstico y priorizar la atención de los casos más urgentes. \\
+
+Desde una perspectiva técnica y formativa, este trabajo se justifica al enfrentar directamente el mayor obstáculo de la inteligencia artificial en medicina: la escasez de imágenes anotadas. Al construir y evaluar inicialmente una red neuronal desde cero, el proyecto facilita una asimilación práctica de los fundamentos matemáticos
+
+
+
+\newpage
+\section{Estado del Arte}
+Históricamente, el diagnóstico oftalmológico dependía exclusivamente de la observación clínica directa y de evaluaciones subjetivas. Tras la invención del oftalmoscopio en 1851, los médicos lograron visualizar la retina viva por primera vez, pero debían documentar las patologías mediante bocetos dibujados a mano que requerían largas horas de sesiones por paciente. Este enfoque clínico era inherentemente lento, propenso a la variabilidad humana y altamente dependiente de la pericia del observador. Posteriormente, la llegada de la fotografía retiniana en 1886 y la transición definitiva hacia la imagenología digital en la década de 1990 permitieron reemplazar las evaluaciones cualitativas por métricas objetivas y reproducibles, sentando por primera vez las bases necesarias para el análisis computacional.\\
+
+Con la digitalización masiva, surgieron los primeros sistemas semiautomatizados que analizaban características arquitectónicas de la retina, como el calibre vascular, la tortuosidad, la dimensión fractal y los ángulos de bifurcación de los vasos sanguíneos. A partir de esto, el estándar transicionó hacia el aprendizaje automático computacional clásico utilizando algoritmos como Máquinas de Vectores de Soporte (SVM), Random Forests y algoritmos de agrupamiento como K-means. Este enfoque dependía de la extracción manual de características, obligando a los programadores a aplicar técnicas como detección de bordes y umbralización para extraer y definir matemáticamente elementos anatómicos como la copa óptica, el disco óptico, microaneurismas o exudados antes de poder procesarlos. Este método asumía representaciones rígidas que consumían mucho tiempo y limitaban severamente la escalabilidad frente a bases de datos masivas.\\
+
+Hacia la última década, la necesidad de mayor flexibilidad y capacidad de generalización impulsó la adopción del Deep Learning, específicamente las Redes Neuronales Convolucionales (CNN). A diferencia de los modelos tradicionales, las CNNs eliminaron la necesidad de la ingeniería manual de características, ya que son capaces de aprender patrones espaciales y representaciones jerárquicas complejas directamente a partir de los píxeles en bruto de las imágenes
+. Trabajos pioneros demostraron rápidamente que estas arquitecturas lograban detectar múltiples patologías de forma automatizada con una eficacia comparable, e incluso superior, a la de los especialistas médicos.\\
+
+En la era contemporánea, la escasez de datos médicos anotados y los altos costos computacionales consolidaron el uso del Transfer Learning. La aplicación de estas redes preentrenadas ha transitado desde la detección de una única enfermedad hacia entornos dinámicos de clasificación múltiple. Esto deja abierta la necesidad de seguir investigando y desarrollando modelos robustos capaces de generalizar diagnósticos complejos en bases de datos del mundo real.
+
+
+%.\texttt{.bib}, citar decenas de papers será muy rápido y limpio.
+
+
+\newpage
+\section{Hipótesis y Objetivos}
+
+Debido la distribución de imágenes en la base de datos ODIR en distintas proporciones, una Red Neuronal Convolucional (CNN) diseñada y entrenada desde cero presentará un rápido sobreajuste (overfitting) y una baja capacidad de generalización al intentar clasificar las 8 patologías simultáneamente.
+
+\subsection{Objetivo General}
+Planificar las bases teóricas y metodológicas para lograr una implementación desde cero de una Red Neuronal Convolucional (CNN) orientada a la clasificación de imágenes médicas.
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Identificar los conceptos matemáticos y computacionales fundamentales del Deep Learning necesarios para el procesamiento de imágenes.
+    \item Definir cómo se reflejará prácticamente cada concepto teórico en las distintas etapas de la futura implementación (preprocesamiento de los datos de ODIR, diseño de la arquitectura y cálculo de pérdida).
+    \item Estructurar el esquema preliminar de la red, justificando desde la teoría las decisiones iniciales de diseño y los hiperparámetros a utilizar.
+\end{itemize}
+
+\section{Implementación Preliminar}
+Proponer modelo de deep learning m ́as apropiado para resolver el problema.
+\subsection{Identificación}
+
+A partir de la revisión de literatura y las clases del curso, se identifican tres arquitecturas principales de Deep Learning: 
+\begin{itemize}
+    \item Perceptrón Multicapa (MLP)
+    \item Redes Neuronales Convolucinales (CNN)
+    \item Redes Neuronales Recurrentes (RNN/LSTM)
+\end{itemize}
+
+\subsection{Filtrar}
+
+Al evaluar estas opciones frente a nuestra base de datos de imágenes (ODIR):
+
+\begin{itemize}
+    \item RNN/LSTM: Se descartan, ya que están diseñadas exclusivamente para modelar datos secuenciales o temporales (como texto o series de tiempo), no imágenes estáticas.
+    
+    \item MLP: Se descartan porque asumen que cada píxel interactúa con todos los demás, lo que no preserva la estructura espacial de la imagen y genera una cantidad inmanejable de parámetros.
+    
+    \item \textbf{CNN:} Es el estándar adecuado, ya que utiliza la convolución y la conectividad dispersa para extraer jerarquías de características espaciales (como bordes y formas) de manera eficiente. Sin embargo, la literatura señala como limitante que requieren bases de datos masivas; aplicarlas a conjuntos médicos pequeños propicia fuertemente el sobreajuste (overfitting)
+.
+\end{itemize}
+
+
+
+
+
+\subsection{Entorno y Librerías}
+Detallar: PyTorch, TensorFlow, etc.
+
+\section{Marco Teórico}
+Aquí colocaremos la teoría (Revisar las clases)
+
+
+
+\section{Discusión de Resultados}
+\subsection{Comparación de desempeño}
+
+
+\section{Conclusiones y Trabajo Futuro}
+\subsection{Conclusiones}
+\subsection{Trabajo Futuro}
+
+% --- BIBLIOGRAFÍA ---
+\newpage
+\printbibliography[heading=bibintoc, title={Referencias}]
+
+\end{document}
