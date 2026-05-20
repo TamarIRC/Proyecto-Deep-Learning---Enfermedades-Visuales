@@ -8,17 +8,17 @@ bibliography: references.bib
 
 ### 1. Era de la Observación Directa (1830s-1950s)
 
-- Observación y diagnostico por Bocetos.
+-   Observación y diagnostico por Bocetos.
 
-  |  |
-  |:---|
-  | ![](https://i.etsystatic.com/42659535/r/il/e8c140/6872523559/il_570xN.6872523559_5hdb.jpg){width="320"} |
+    |  |
+    |:-----------------------------------------------------------------------|
+    | ![](https://i.etsystatic.com/42659535/r/il/e8c140/6872523559/il_570xN.6872523559_5hdb.jpg){width="320"} |
 
-- Oftalmoscopio **(Hermann von Helmholz).**
+-   Oftalmoscopio **(Hermann von Helmholz).**
 
 ### 2. Primeras implementaciones formales y técnicas (1880s - 1990s)
 
-- Primera **imágen** del fondo de ojo (1886).
+-   Primera **imágen** del fondo de ojo (1886).
 
 En 1886 se publico la primera imagen en vivo la fotografia del fondo del ojo.
 
