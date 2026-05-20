@@ -4,29 +4,63 @@ bibliography: references.bib
 
 # Estado del Arte {background-color="#4e2a84"}
 
-## Estado del Arte {.scrollable}
+## Estado del Arte {.scrollable .smaller}
 
-### 1. Era de la Observación Directa (1830s-1950s)
+### Era de la Observación Directa (1830s-1950s)
 
 - Observación y diagnostico por Bocetos.
 
-  |  |
-  |:---|
-  | ![](https://i.etsystatic.com/42659535/r/il/e8c140/6872523559/il_570xN.6872523559_5hdb.jpg){width="320"} |
-
 - Oftalmoscopio **(Hermann von Helmholz).**
 
-### 2. Primeras implementaciones formales y técnicas (1880s - 1990s)
+::::: columns
+::: {.column width="50%"}
+![Ocular fundus. From Dissertatio ophthalmologica inauguralis](images/imagen1.jpeg){fig-align="center" width="60%"}
+:::
+
+::: {.column width="50%"}
+![Helmholtz’s ophthalmoscope, circa 1850s.](images/imagen2.jpeg){fig-align="center" width="64%"}
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Estado del Arte {.scrollable .smaller}
+
+### Primeras implementaciones formales y técnicas (1880s - 1990s)
 
 - Primera **imágen** del fondo de ojo (1886).
 
-En 1886 se publico la primera imagen en vivo la fotografia del fondo del ojo.
+- Angiografía con fluoresceína (1961).
 
-En 1961 surgio la angiografia con fluoresceína y en 1979 surgio la oftalmoscopia láser de barrido que eran tecnicas mas formales para el análisis vascular.
+- Oftalmoscopia Láser (1979).
 
-En la década de 1990 ocurrio la transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
+- Transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
 
-### 3. Implementaciones computacionales serias (2000s-2015)
+::::: columns
+::: {.column width="50%"}
+![Ocular fundus. From Dissertatio ophthalmologica inauguralis](images/imagen3.jpg){fig-align="center" width="30%"}
+:::
+
+::: {.column width="50%"}
+![Helmholtz’s ophthalmoscope, circa 1850s.](images/imagen4.jpg){fig-align="center" width="38%"}
+:::
+:::::
+
+::::: columns
+::: {.column width="50%"}
+![Ocular fundus. From Dissertatio ophthalmologica inauguralis](images/imagen5.jpeg){fig-align="center" width="31%"}
+:::
+
+::: {.column width="50%"}
+![Helmholtz’s ophthalmoscope, circa 1850s.](images/imagen6.jpg){fig-align="center" width="33%"}
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Estado del Arte {.scrollable .smaller}
+
+### Implementaciones computacionales serias (2000s-2015)
 
 Surgieron los sistemas de diagnóstico asistido por computadora basados en Machine Learning tradicional.
 
@@ -38,7 +72,11 @@ Se estandarizaron el uso de algoritmos clasicos como Maquinas de Soporte Vectori
 
 Los modelos dependían de la extracción manual de características el cual era el problema principal de esta etapa.
 
-### 4. Implementaciones modernas de la actualidad (2015-Presente)
+------------------------------------------------------------------------
+
+## Estado del Arte {.scrollable .smaller}
+
+### Implementaciones modernas de la actualidad (2015-Presente)
 
 Dominada por el Deep Learning y las Redes Neuronales Convolucionales (CNN) [^3]
 
