@@ -10,7 +10,9 @@ bibliography: references.bib
 
 -   Observación y diagnostico por Bocetos.
 
--   Oftalmoscopio (Hermann von Helmholz)
+-   Oftalmoscopio (Hermann von Helmholz) [^1]
+
+[^1]: @irodi_evolution_2026
 
 ### Primeras implementaciones formales y técnicas (1880s - 1990s)
 
@@ -24,26 +26,34 @@ bibliography: references.bib
 
 ### Implementaciones computacionales serias (2000s-2015)
 
-Surgieron los sistemas de diagnóstico asistido por computadora basados en Machine Learning tradicional.
+-   Diagnóstico basado en Machine Learning
 
-Se estandarizaron el uso de algoritmos clasicos como Maquinas de Soporte Vectorial (SVM), Random Forest y K-means. [^1] [^2]
+-   Maquinas de Soporte Vectorial (SVM)
 
-[^1]: @sarki_automatic_2020
+-   Random Forest
 
-[^2]: @sarhan_machine_2020
+-   K-means [^2] [^3]
 
-Los modelos dependían de la extracción manual de características el cual era el problema principal de esta etapa.
+-   Extraccion Manual de Características
+
+[^2]: @sarki_automatic_2020
+
+[^3]: @sarhan_machine_2020
 
 ### Implementaciones modernas de la actualidad (2015-Presente)
 
-Dominada por el Deep Learning y las Redes Neuronales Convolucionales (CNN) [^3]
+-   Deep Learning y Redes Neuronales Convolucionales (CNN) [^4]
 
-[^3]: @perdomo_charry_systematic_2019
+-   Los modelos igualaban o superaban a los especialistas humanos en detectar patologias (Desde 2016)[^5]
 
-Desde 2016 a partir de decenas de miles de imágenes las investigaciones publicaron modelos que igualaban o superaban a los especialistas humanos en la detección de patologías como la retinopatía diabetica, glaucoma y degeneración macular.[^4]
+-   Transfer Learning (Actualidad)
 
-[^4]: @ting_development_2017
+-   Interpretabilidad del Modelo
 
-En la actualidad se incluye el uso de Transfer Learning para sortear la escasez de datos médicos.
+-   Modelos Funcionales Generalistas
 
-Según las investigaciones más recientes las barreras se empujan hacia la interpretabilidad del modelo, el uso de Modelos Fundacionales generalistas y el diseño de IA el cual es capaz de predecir la progresión longitudinal de la pérdida de visión.
+-   Diseño de IA
+
+[^4]: @perdomo_charry_systematic_2019
+
+[^5]: @ting_development_2017
