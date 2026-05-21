@@ -1,9 +1,4 @@
----
-
-editor_options: 
-  markdown: 
-    wrap: 72
----
+------------------------------------------------------------------------
 
 # Proyecto-Deep-Learning---Enfermedades-Visuales
 

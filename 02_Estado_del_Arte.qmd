@@ -8,33 +8,33 @@ bibliography: references.bib
 
 ### Era de la Observación Directa (1830s-1950s)
 
--   Observación y diagnostico por Bocetos.
+- Observación y diagnostico por Bocetos.
 
--   Oftalmoscopio (Hermann von Helmholz) [^1]
+- Oftalmoscopio (Hermann von Helmholz) [^1]
 
 [^1]: @irodi_evolution_2026
 
 ### Primeras implementaciones formales y técnicas (1880s - 1990s)
 
--   Primera **imágen** del fondo de ojo (1886).
+- Primera **imágen** del fondo de ojo (1886).
 
--   Angiografía con fluoresceína (1961).
+- Angiografía con fluoresceína (1961).
 
--   Oftalmoscopia Láser (1979).
+- Oftalmoscopia Láser (1979).
 
--   Transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
+- Transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
 
 ### Implementaciones computacionales serias (2000s-2015)
 
--   Diagnóstico basado en Machine Learning
+- Diagnóstico basado en Machine Learning
 
--   Maquinas de Soporte Vectorial (SVM)
+- Maquinas de Soporte Vectorial (SVM)
 
--   Random Forest
+- Random Forest
 
--   K-means [^2] [^3]
+- K-means [^2] [^3]
 
--   Extraccion Manual de Características
+- Extraccion Manual de Características
 
 [^2]: @sarki_automatic_2020
 
@@ -42,17 +42,17 @@ bibliography: references.bib
 
 ### Implementaciones modernas de la actualidad (2015-Presente)
 
--   Deep Learning y Redes Neuronales Convolucionales (CNN) [^4]
+- Deep Learning y Redes Neuronales Convolucionales (CNN) [^4]
 
--   Los modelos igualaban o superaban a los especialistas humanos en detectar patologias (Desde 2016)[^5]
+- Los modelos igualaban o superaban a los especialistas humanos en detectar patologias (Desde 2016)[^5]
 
--   Transfer Learning (Actualidad)
+- Transfer Learning (Actualidad)
 
--   Interpretabilidad del Modelo
+- Interpretabilidad del Modelo
 
--   Modelos Funcionales Generalistas
+- Modelos Funcionales Generalistas
 
--   Diseño de IA
+- Diseño de IA
 
 [^4]: @perdomo_charry_systematic_2019
 
