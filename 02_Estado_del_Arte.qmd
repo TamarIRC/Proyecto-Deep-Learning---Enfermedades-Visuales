@@ -4,9 +4,9 @@
 
 ### Era de la Observación Directa
 
-- Observación y diagnostico por Bocetos.
+-   Observación y diagnostico por Bocetos.
 
-- Oftalmoscopio (Hermann von Helmholz) [^02_estado_del_arte-1]
+-   Oftalmoscopio (Hermann von Helmholz) [^02_estado_del_arte-1]
 
 [^02_estado_del_arte-1]: [@irodi_evolution_2026]
 
@@ -14,27 +14,27 @@
 
 ### Primeras implementaciones tecnológicas y rigurosas
 
-- Primera **imágen** del fondo de ojo (1886).
+-   Primera **imágen** del fondo de ojo (1886).
 
-- Angiografía con fluoresceína (1961).
+-   Angiografía con fluoresceína (1961).
 
-- Oftalmoscopia Láser (1979).
+-   Oftalmoscopia Láser (1979).
 
-- Transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
+-   Transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
 
 ------------------------------------------------------------------------
 
 ### Implementaciones Computacionales
 
-- Diagnóstico basado en Machine Learning
+-   Diagnóstico basado en Machine Learning
 
-- Maquinas de Soporte Vectorial (SVM)
+-   Maquinas de Soporte Vectorial (SVM)
 
-- Random Forest
+-   Random Forest
 
-- K-means [^02_estado_del_arte-2] [^02_estado_del_arte-3]
+-   K-means [^02_estado_del_arte-2] [^02_estado_del_arte-3]
 
-- Extraccion Manual de Características
+-   Extraccion Manual de Características
 
 [^02_estado_del_arte-2]: @sarki_automatic_2020
 
@@ -44,17 +44,17 @@
 
 ### Implementaciones Modernas {.scrollable .smaller}
 
-- Deep Learning y Redes Neuronales Convolucionales (CNN) [^02_estado_del_arte-4]
+-   Deep Learning y Redes Neuronales Convolucionales (CNN) [^02_estado_del_arte-4]
 
-- Los modelos igualaban o superaban a los especialistas humanos en detectar patologias (Desde 2016)[^02_estado_del_arte-5]
+-   Los modelos igualaban o superaban a los especialistas humanos en detectar patologias (Desde 2016)[^02_estado_del_arte-5]
 
-- Transfer Learning (Actualidad)
+-   Transfer Learning (Actualidad)
 
-- Interpretabilidad del Modelo
+-   Interpretabilidad del Modelo
 
-- Modelos Funcionales Generalistas
+-   Modelos Funcionales Generalistas
 
-- Diseño de IA
+-   Diseño de IA
 
 [^02_estado_del_arte-4]: @perdomo_charry_systematic_2019
 
