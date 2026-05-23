@@ -1,45 +1,26 @@
----
-bibliography: references.bib
----
+# Planteamiento del problema {background-color="#4e2a84"}
 
-# Introducción al Problema {background-color="#4e2a84"}
-
-## Contexto de la base de datos {.smaller .scrollable}
-
-Las Redes Neuronales Convolucionales han demostrado un 98% de precisión en la detección de Retinopatía Diabética [^1].
-
-[^1]: @aizaldeenabdullah2024
+## Contexto de los Datos {.smaller}
 
 ::: nu-block
-[R]{.block-title}
+[Composición de la Base de Datos Ocular]{.block-title}
 
-```{r}
-library(ggplot2)
-# Aquí va tu código de verdad
-```
+| Clase                                   | Etiqueta | Cantidad |
+|:----------------------------------------|:--------:|---------:|
+| Normal                                  |    N     |     2873 |
+| Diabetes                                |    D     |     1608 |
+| Otros                                   |    O     |      708 |
+| Catarata                                |    C     |      293 |
+| Glaucoma                                |    G     |      284 |
+| Degeneración Macular Asociada a la Edad |    A     |      266 |
+| Miopía                                  |    M     |      232 |
+| Hipertensión                            |    H     |      128 |
+
+: Frecuencia de clases en la base de datos
 :::
 
-::: nu-block
-``` r
-library(ggplot2)
-# Aquí va tu código de verdad
-```
-:::
+------------------------------------------------------------------------
 
-a
+# Justificación {background-color="#4e2a84"}
 
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
+## ¿Cuál es la importancia de resolver el problema?

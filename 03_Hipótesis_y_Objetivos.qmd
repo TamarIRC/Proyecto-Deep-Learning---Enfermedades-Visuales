@@ -1,9 +1,3 @@
----
-output: html_document
-editor_options: 
-  chunk_output_type: console
----
-
 # Hipótesis y Objetivos {background-color="#4e2a84"}
 
 ## Planteamiento del problema {.smaller .scrollable}
@@ -12,9 +6,9 @@ editor_options:
 
 - El problema real con ODIR surge al **dividir** esos datos en **8 categorías** con frecuencias desproporcionadas.
 
-- **Sobreajuste**[^1] por escasez de datos. (Se agraba si consideramos dividir la base en datos de Entrenamiento y Testeo).
+- **Sobreajuste**[^03_hipótesis_y_objetivos-1] por escasez de datos. (Se agraba si consideramos dividir la base en datos de Entrenamiento y Testeo).
 
-[^1]: @zhang_dive_2021
+[^03_hipótesis_y_objetivos-1]: @zhang_dive_2021
 
 #### Clases y Distribución
 
@@ -70,22 +64,18 @@ mtext("Patologías", side = 2, line = 9, col = "#333333", font = 2)
 
 ## Objetivos {.smaller .scrollable}
 
-### Objetivo Principal
-
 ::: {.nu-block .smaller}
-[Objetivo General:]{.block-title} Planificar las bases teóricas y metodológicas para la implementación desde cero de un modelo base de Deep Learning orientado a la clasificación de imágenes médicas, estableciendo una métrica de referencia para cuantificar el sobreajuste.
+[**Objetivo General**:]{.block-title} Planificar las bases teóricas y metodológicas para la implementación desde cero de un modelo base de Deep Learning orientado a la clasificación de imágenes médicas, estableciendo una métrica de referencia para cuantificar el sobreajuste.
 :::
 
-### Objetivos Específicos
-
 ::: {.nu-block .smaller}
-[Objetivos Específicos:]{.block-title}
+[**Objetivos Específicos**:]{.block-title}
 
-- Identificar los conceptos matem´aticos y computacionales fundamentales del Deep
-  Learning necesarios para el procesamiento de im´agenes.
+- Definir los conceptos matemáticos y computacionales fundamentales del Deep Learning necesarios para el procesamiento de imágenes.
 
-- Definir cómo se reflejaría prácticamente cada concepto teórico en las distintas etapas
-  de la futura implementación.
+- Identificar cómo se reflejarían estos concepto teóricos en las distintas etapas de la futura implementación.
 
-- Estructurar el esquema preliminar de la red, justificando desde la teor´ıa las decisiones iniciales de dise˜no y los hiperpar´ametros a utilizar.
+- Implementar y/o replicar un modelo capaz de procesar y clasificar imágenes.
+
+- Evidenciar empíricamente un posible sobreajuste.
 :::

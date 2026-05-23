@@ -1,20 +1,18 @@
----
-bibliography: references.bib
----
-
 # Estado del Arte {background-color="#4e2a84"}
 
 ## Estado del Arte {.scrollable .smaller}
 
-### Era de la Observación Directa (1830s-1950s)
+### Era de la Observación Directa
 
 - Observación y diagnostico por Bocetos.
 
-- Oftalmoscopio (Hermann von Helmholz) [^1]
+- Oftalmoscopio (Hermann von Helmholz) [^02_estado_del_arte-1]
 
-[^1]: @irodi_evolution_2026
+[^02_estado_del_arte-1]: [@irodi_evolution_2026]
 
-### Primeras implementaciones formales y técnicas (1880s - 1990s)
+------------------------------------------------------------------------
+
+### Primeras implementaciones tecnológicas y rigurosas
 
 - Primera **imágen** del fondo de ojo (1886).
 
@@ -24,7 +22,9 @@ bibliography: references.bib
 
 - Transición a la fotografía digital y la tomografá de coherencia óptica (OCT).
 
-### Implementaciones computacionales serias (2000s-2015)
+------------------------------------------------------------------------
+
+### Implementaciones Computacionales
 
 - Diagnóstico basado en Machine Learning
 
@@ -32,19 +32,21 @@ bibliography: references.bib
 
 - Random Forest
 
-- K-means [^2] [^3]
+- K-means [^02_estado_del_arte-2] [^02_estado_del_arte-3]
 
 - Extraccion Manual de Características
 
-[^2]: @sarki_automatic_2020
+[^02_estado_del_arte-2]: @sarki_automatic_2020
 
-[^3]: @sarhan_machine_2020
+[^02_estado_del_arte-3]: @sarhan_machine_2020
 
-### Implementaciones modernas de la actualidad (2015-Presente)
+------------------------------------------------------------------------
 
-- Deep Learning y Redes Neuronales Convolucionales (CNN) [^4]
+### Implementaciones Modernas {.scrollable .smaller}
 
-- Los modelos igualaban o superaban a los especialistas humanos en detectar patologias (Desde 2016)[^5]
+- Deep Learning y Redes Neuronales Convolucionales (CNN) [^02_estado_del_arte-4]
+
+- Los modelos igualaban o superaban a los especialistas humanos en detectar patologias (Desde 2016)[^02_estado_del_arte-5]
 
 - Transfer Learning (Actualidad)
 
@@ -54,6 +56,6 @@ bibliography: references.bib
 
 - Diseño de IA
 
-[^4]: @perdomo_charry_systematic_2019
+[^02_estado_del_arte-4]: @perdomo_charry_systematic_2019
 
-[^5]: @ting_development_2017
+[^02_estado_del_arte-5]: @ting_development_2017
