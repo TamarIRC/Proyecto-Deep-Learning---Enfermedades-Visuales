@@ -1,0 +1,31 @@
+# Planteamiento del problema {background-color="#4e2a84"}
+
+## Objetivos {.smaller .scrollable}
+
+::: {.nu-block .smaller}
+[**Objetivo General**:]{.block-title}
+
+-   Carga global de morbilidad: Patologías como el glaucoma, la retinopatía diabética y las cataratas son las principales causas de discapacidad visual y ceguera a nivel mundial.
+
+-   Cuello de botella en el diagnóstico: El proceso clínico actual depende del análisis manual exhaustivo de imágenes del fondo de ojo. Este enfoque es:
+
+1.  *Altamente consumidor de tiempo.*
+
+2.  *Propenso a una alta varianza y sesgo (variabilidad clínica entre observadores).*
+
+-   Brecha de accesibilidad: Existe una severa escasez de especialistas para interpretar estos exámenes, limitando drásticamente el acceso a diagnósticos oportunos en regiones rurales o desatendidas.
+:::
+
+# Justificación {background-color="#4e2a84"}
+
+## ¿Cuál es la importancia de resolver el problema? {.smaller .scrollable}
+
+::: {.nu-block .smaller}
+[**Justificación**:]{.block-title}
+
+-   Impacto Clínico (**Prevención**): La detección temprana cambia drásticamente el pronóstico del paciente. Por ejemplo, el diagnóstico oportuno permite prevenir el daño visual severo en el 90% de los pacientes diabéticos.
+
+-   Impacto Operativo (**Democratización de la Salud**): Automatizar el cribado de imágenes rompe la barrera geográfica. Permite implementar sistemas de teleoftalmología rápidos y masivos, llevando diagnósticos de nivel experto a zonas remotas.
+
+-   Visión Sistémica (**Oculómica**): El ojo actúa como una ventana no invasiva al cuerpo. Resolver la clasificación automatizada de estas imágenes no solo previene la ceguera, sino que abre la puerta a detectar señales tempranas de enfermedades cardiovasculares, metabólicas o neurológicas antes de que presenten síntomas sistémicos.
+:::
