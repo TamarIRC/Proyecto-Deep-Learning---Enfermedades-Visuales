@@ -2,11 +2,11 @@
 
 ## Planteamiento del problema {.smaller .scrollable}
 
-- En cuanto a ODIR, disponemos de **5.000 imágenes** de pacientes.
+-   En cuanto a ODIR, disponemos de **5.000 imágenes** de pacientes.
 
-- El problema real con ODIR surge al **dividir** esos datos en **8 categorías** con frecuencias desproporcionadas.
+-   El problema real con ODIR surge al **dividir** esos datos en **8 categorías** con frecuencias desproporcionadas.
 
-- **Sobreajuste**[^03_hipótesis_y_objetivos-1] por escasez de datos. (Se agraba si consideramos dividir la base en datos de Entrenamiento y Testeo).
+-   **Sobreajuste**[^03_hipótesis_y_objetivos-1] por escasez de datos. (Se agraba si consideramos dividir la base en datos de Entrenamiento y Testeo).
 
 [^03_hipótesis_y_objetivos-1]: @zhang_dive_2021
 
@@ -71,11 +71,11 @@ mtext("Patologías", side = 2, line = 9, col = "#333333", font = 2)
 ::: {.nu-block .smaller}
 [**Objetivos Específicos**:]{.block-title}
 
-- Definir los conceptos matemáticos y computacionales fundamentales del Deep Learning necesarios para el procesamiento de imágenes.
+-   Definir los conceptos matemáticos y computacionales fundamentales del Deep Learning necesarios para el procesamiento de imágenes.
 
-- Identificar cómo se reflejarían estos concepto teóricos en las distintas etapas de la futura implementación.
+-   Identificar cómo se reflejarían estos concepto teóricos en las distintas etapas de la futura implementación.
 
-- Implementar y/o replicar un modelo capaz de procesar y clasificar imágenes.
+-   Implementar y/o replicar un modelo capaz de procesar y clasificar imágenes.
 
-- Evidenciar empíricamente un posible sobreajuste.
+-   Evidenciar empíricamente un posible sobreajuste.
 :::
