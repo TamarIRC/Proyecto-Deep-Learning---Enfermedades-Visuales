@@ -18,13 +18,3 @@
 
 : Frecuencia de clases en la base de datos
 :::
-
-------------------------------------------------------------------------
-
-# Justificación {background-color="#4e2a84"}
-
-## ¿Cuál es la importancia de resolver el problema?
-
-
-
-
