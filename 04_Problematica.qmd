@@ -1,22 +1,22 @@
-## Objetivos {.smaller .scrollable}
+## Objetivos {.smaller}
 
 ::: {.nu-block .smaller}
 [**Objetivo General**:]{.block-title}
 
--   Carga global de morbilidad: Patologías como el glaucoma, la retinopatía diabética y las cataratas son las principales causas de discapacidad visual y ceguera a nivel mundial.
+-   **Carga global de morbilidad**: Patologías como el glaucoma, la retinopatía diabética y las cataratas son las principales causas de discapacidad visual y ceguera a nivel mundial.
 
--   Cuello de botella en el diagnóstico: El proceso clínico actual depende del análisis manual exhaustivo de imágenes del fondo de ojo. Este enfoque es:
+-   **Cuello de botella en el diagnóstico**: El proceso clínico actual depende del análisis manual exhaustivo de imágenes del fondo de ojo. Este enfoque es:
 
 1.  *Altamente consumidor de tiempo.*
 
 2.  *Propenso a una alta varianza y sesgo (variabilidad clínica entre observadores).*
 
--   Brecha de accesibilidad: Existe una severa escasez de especialistas para interpretar estos exámenes, limitando drásticamente el acceso a diagnósticos oportunos en regiones rurales o desatendidas.
+-   **Brecha de accesibilidad**: Existe una severa escasez de especialistas para interpretar estos exámenes, limitando drásticamente el acceso a diagnósticos oportunos en regiones rurales o desatendidas.
 :::
 
 # Justificación {background-color="#4e2a84"}
 
-## ¿Cuál es la importancia de resolver el problema? {.smaller .scrollable}
+## ¿Cuál es la importancia de resolver el problema? {.smaller}
 
 ::: {.nu-block .smaller}
 [**Justificación**:]{.block-title}
