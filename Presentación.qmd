@@ -28,6 +28,4 @@ bibliography: references.bib
 
 {{< include 02_Estado_del_Arte.qmd >}}
 
-{{< include 03_Hipótesis_y_Objetivos.qmd >}}
-
 {{< include 04_Implementación_Preliminar.qmd >}}
