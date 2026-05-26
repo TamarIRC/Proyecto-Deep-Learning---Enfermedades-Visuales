@@ -1,6 +1,6 @@
-# Implementación Preliminar {background-color="#4e2a84"}
+# Metodología Preliminar {background-color="#4e2a84"}
 
-## Implementación Preliminar
+## Metodología Preliminar
 
 A partir de la revisión de literatura y las clases del curso, se identifican tres arquitecturas principales de Deep Learning:
 

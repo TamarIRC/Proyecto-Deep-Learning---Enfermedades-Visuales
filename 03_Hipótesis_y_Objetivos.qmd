@@ -1,81 +1,31 @@
 # Hipótesis y Objetivos {background-color="#4e2a84"}
 
-## Planteamiento del problema {.smaller .scrollable}
-
-- En cuanto a ODIR, disponemos de **5.000 imágenes** de pacientes.
-
-- El problema real con ODIR surge al **dividir** esos datos en **8 categorías** con frecuencias desproporcionadas.
-
-- **Sobreajuste**[^03_hipótesis_y_objetivos-1] por escasez de datos. (Se agraba si consideramos dividir la base en datos de Entrenamiento y Testeo).
-
-[^03_hipótesis_y_objetivos-1]: @zhang_dive_2021
-
-#### Clases y Distribución
-
-```{r}
-#| echo: false
-#| fig-align: "left"
-clases <- c("Normal", "Diabetes", "Otros", "Catarata", "Glaucoma", 
-            "Degeneración Macular", "Miopía", "Hipertensión")
-cantidades <- c(2873, 1608, 708, 293, 284, 266, 232, 128)
-
-# Para barras horizontales, R dibuja de abajo hacia arriba, así que ordenamos de menor a mayor
-orden_horiz <- order(cantidades, decreasing = FALSE)
-clases_horiz <- clases[orden_horiz]
-cantidades_horiz <- cantidades[orden_horiz]
-
-# Ajustamos los márgenes: c(abajo, izquierda, arriba, derecha)
-# El '11' a la izquierda es para que no se corte "Degeneración Macular"
-# El '5' abajo da espacio cómodo para el título del eje X
-par(mar = c(5, 11, 3, 1), bg = "transparent", family = "sans")
-
-# Creamos el gráfico horizontal
-barplot(cantidades_horiz, 
-        names.arg = clases_horiz, 
-        horiz = TRUE,                   # <-- Barras horizontales
-        col = "#4e2a84",          
-        border = NA,              
-        las = 1,                        # <-- Texto de las patologías en horizontal para fácil lectura
-        cex.names = 0.85,               
-        main = "Distribución de Patologías",
-        col.main = "#4e2a84",
-        xlim = c(0, 3000),              # <-- Ahora usamos xlim porque las cantidades van a lo ancho
-        ylab = "",                      
-        xlab = "")                      
-
-# Dibujamos ambos títulos de los ejes en negrita (font = 2) y color gris oscuro
-# Eje X (Abajo -> side = 1)
-mtext("Cantidad de imágenes", side = 1, line = 3.5, col = "#333333", font = 2)
-
-# Eje Y (Izquierda -> side = 2)
-mtext("Patologías", side = 2, line = 9, col = "#333333", font = 2)
-
-```
-
-------------------------------------------------------------------------
-
 ## Hipótesis
 
 ::: nu-block
-[Hipótesis:]{.block-title} Implementar un modelo base de *Deep Learning* permitirá cuantificar el sobreajuste causado por la escasez de datos, estableciendo la métrica de referencia para identificar la arquitectura óptima que clasifique exitosamente las 8 patologías oculares.
+[Hipótesis:]{.block-title} Un sistema de "evaluación preventiva" automatizado de imágenes de fondo de ojo permitirá detectar tempranamente múltiples patologías, optimizando el tiempo médico y previniendo la ceguera al acelerar la derivación y tratamiento de pacientes de riesgo.[^03_hipótesis_y_objetivos-1][^03_hipótesis_y_objetivos-2]
 :::
+
+[^03_hipótesis_y_objetivos-1]: @ting_development_2017
+
+[^03_hipótesis_y_objetivos-2]: @sarki_automatic_2020
 
 ------------------------------------------------------------------------
 
 ## Objetivos {.smaller .scrollable}
 
 ::: {.nu-block .smaller}
-[**Objetivo General**:]{.block-title} Planificar las bases teóricas y metodológicas para la implementación desde cero de un modelo base de Deep Learning orientado a la clasificación de imágenes médicas, estableciendo una métrica de referencia para cuantificar el sobreajuste.
+[**Objetivo General**: ]{.block-title}Replicar una herramienta de Deep Learning para el proceso de evaluación médica urgente oftalmológico y automatizado para clasificar enfermedades visuales. mitigando la escasez de especialistas médicos.
 :::
 
 ::: {.nu-block .smaller}
 [**Objetivos Específicos**:]{.block-title}
 
-- Definir los conceptos matemáticos y computacionales fundamentales del Deep Learning necesarios para el procesamiento de imágenes.
-
-- Identificar cómo se reflejarían estos concepto teóricos en las distintas etapas de la futura implementación.
-
 - Implementar y/o replicar un modelo capaz de procesar y clasificar imágenes.
 
-- Evidenciar empíricamente un posible sobreajuste.
+- Identificar tempranamente anomalías clínicas que amenazan la visión.
+
+- Reducir los tiempos de espera entre la evaluación y la intervención médica.
+
+- Filtrar casos sanos para priorizar la atención de pacientes que requieren tratamiento urgente.
 :::

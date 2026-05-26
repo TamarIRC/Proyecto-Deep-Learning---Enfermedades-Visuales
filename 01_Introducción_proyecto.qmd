@@ -1,6 +1,6 @@
 # Planteamiento del problema {background-color="#4e2a84"}
 
-## Contexto de los Datos {.smaller}
+## Contexto de los Datos {.smaller .scrollable}
 
 ::: nu-block
 [Composición de la Base de Datos Ocular]{.block-title}
@@ -18,3 +18,45 @@
 
 : Frecuencia de clases en la base de datos
 :::
+
+## Gráfico de Frecuencias
+
+```{r}
+#| echo: false
+#| fig-align: "left"
+clases <- c("Normal", "Diabetes", "Otros", "Catarata", "Glaucoma", 
+            "Degeneración Macular", "Miopía", "Hipertensión")
+cantidades <- c(2873, 1608, 708, 293, 284, 266, 232, 128)
+
+# Para barras horizontales, R dibuja de abajo hacia arriba, así que ordenamos de menor a mayor
+orden_horiz <- order(cantidades, decreasing = FALSE)
+clases_horiz <- clases[orden_horiz]
+cantidades_horiz <- cantidades[orden_horiz]
+
+# Ajustamos los márgenes: c(abajo, izquierda, arriba, derecha)
+# El '11' a la izquierda es para que no se corte "Degeneración Macular"
+# El '5' abajo da espacio cómodo para el título del eje X
+par(mar = c(5, 11, 3, 1), bg = "transparent", family = "sans")
+
+# Creamos el gráfico horizontal
+barplot(cantidades_horiz, 
+        names.arg = clases_horiz, 
+        horiz = TRUE,                   # <-- Barras horizontales
+        col = "#4e2a84",          
+        border = NA,              
+        las = 1,                        # <-- Texto de las patologías en horizontal para fácil lectura
+        cex.names = 0.85,               
+        main = "Distribución de Patologías",
+        col.main = "#4e2a84",
+        xlim = c(0, 3000),              # <-- Ahora usamos xlim porque las cantidades van a lo ancho
+        ylab = "",                      
+        xlab = "")                      
+
+# Dibujamos ambos títulos de los ejes en negrita (font = 2) y color gris oscuro
+# Eje X (Abajo -> side = 1)
+mtext("Cantidad de imágenes", side = 1, line = 3.5, col = "#333333", font = 2)
+
+# Eje Y (Izquierda -> side = 2)
+mtext("Patologías", side = 2, line = 9, col = "#333333", font = 2)
+
+```
