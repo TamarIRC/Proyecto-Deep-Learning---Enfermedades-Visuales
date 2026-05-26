@@ -1,6 +1,6 @@
 # Metodología Preliminar {background-color="#4e2a84"}
 
-## Metodología Preliminar
+## Metodología Preliminar {.scrollable}
 
 A partir de la revisión de literatura y las clases del curso, se identifican tres arquitecturas principales de Deep Learning:
 
@@ -10,7 +10,9 @@ A partir de la revisión de literatura y las clases del curso, se identifican tr
 
 - Redes Neuronales Recurrentes (RNN/LSTM)
 
-# Filtro {.smaller}
+# Filtro {background-color="#4e2a84"}
+
+## Filtro {.scrollable .smaller}
 
 Al evaluar estas opciones frente a nuestra base de datos de imágenes (ODIR):
 
