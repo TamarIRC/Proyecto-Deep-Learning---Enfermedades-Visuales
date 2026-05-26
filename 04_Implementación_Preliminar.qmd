@@ -4,20 +4,28 @@
 
 A partir de la revisión de literatura y las clases del curso, se identifican tres arquitecturas principales de Deep Learning:
 
--   Perceptrón Multicapa (MLP)
+- Perceptrón Multicapa (MLP)
 
--   Redes Neuronales Convolucinales (CNN)
+- Redes Neuronales Convolucinales (CNN)
 
--   Redes Neuronales Recurrentes (RNN/LSTM)
+- Redes Neuronales Recurrentes (RNN/LSTM)
 
 # Filtro {.smaller}
 
 Al evaluar estas opciones frente a nuestra base de datos de imágenes (ODIR):
 
--   RNN/LSTM: Se descartan, ya que están diseñadas exclusivamente para modelar datos secuenciales o temporales (como texto o series de tiempo), no imágenes estáticas.
+- RNN/LSTM: Se descartan, ya que están diseñadas exclusivamente para modelar datos secuenciales o temporales (como texto o series de tiempo), no imágenes estáticas.[^04_implementación_preliminar-1]
 
--   MLP: Se descartan porque asumen que cada píxel interactúa con todos los demás, lo que no preserva la estructura espacial de la imagen y genera una cantidad inmanejable de parámetros.
+- MLP: Se descartan porque asumen que cada píxel interactúa con todos los demás, lo que no preserva la estructura espacial de la imagen y genera una cantidad inmanejable de parámetros.[^04_implementación_preliminar-2]
 
--   CNN: Es el estándar adecuado, ya que utiliza la convolución y la conectividad dispersa para extraer jerarquías de características espaciales (como bordes y formas) de manera eficiente. Sin embargo, la literatura señala como limitante que requieren bases de datos masivas; aplicarlas a conjuntos médicos pequeños propicia fuertemente el sobreajuste (overfitting).
+- CNN: Es el estándar adecuado, ya que utiliza la convolución y la conectividad dispersa para extraer jerarquías de características espaciales (como bordes y formas) de manera eficiente.[^04_implementación_preliminar-3] Sin embargo, la literatura señala como limitante que requieren bases de datos masivas; aplicarlas a conjuntos médicos pequeños propicia fuertemente el sobreajuste (overfitting).[^04_implementación_preliminar-4]
+
+[^04_implementación_preliminar-1]: @zhang_dive_2021
+
+[^04_implementación_preliminar-2]: @zhang_dive_2021
+
+[^04_implementación_preliminar-3]: @zhang_dive_2021
+
+[^04_implementación_preliminar-4]: @sarki_automatic_2020
 
 # Referencias
