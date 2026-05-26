@@ -1,6 +1,6 @@
 ## Objetivos {.smaller .scrollable}
 
-::: {.nu-block .smaller .scrollable}
+::: nu-block
 [**Objetivo General**:]{.block-title}
 
 - **Carga global de morbilidad**: Patologías como el glaucoma, la retinopatía diabética y las cataratas son las principales causas de discapacidad visual y ceguera a nivel mundial.[^04_problematica-1]
