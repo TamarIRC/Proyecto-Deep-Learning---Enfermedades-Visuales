@@ -2,4 +2,22 @@
 
 ## Implementación Preliminar
 
+A partir de la revisión de literatura y las clases del curso, se identifican tres arquitecturas principales de Deep Learning:
+
+-   Perceptrón Multicapa (MLP)
+
+-   Redes Neuronales Convolucinales (CNN)
+
+-   Redes Neuronales Recurrentes (RNN/LSTM)
+
+# Filtro {.smaller}
+
+Al evaluar estas opciones frente a nuestra base de datos de imágenes (ODIR):
+
+-   RNN/LSTM: Se descartan, ya que están diseñadas exclusivamente para modelar datos secuenciales o temporales (como texto o series de tiempo), no imágenes estáticas.
+
+-   MLP: Se descartan porque asumen que cada píxel interactúa con todos los demás, lo que no preserva la estructura espacial de la imagen y genera una cantidad inmanejable de parámetros.
+
+-   CNN: Es el estándar adecuado, ya que utiliza la convolución y la conectividad dispersa para extraer jerarquías de características espaciales (como bordes y formas) de manera eficiente. Sin embargo, la literatura señala como limitante que requieren bases de datos masivas; aplicarlas a conjuntos médicos pequeños propicia fuertemente el sobreajuste (overfitting).
+
 # Referencias
