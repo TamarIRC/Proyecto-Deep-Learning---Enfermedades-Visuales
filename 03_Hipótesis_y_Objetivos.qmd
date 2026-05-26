@@ -1,9 +1,9 @@
 # Hipótesis y Objetivos {background-color="#4e2a84"}
 
-## Hipótesis
+## Hipótesis {.smaller}
 
 ::: nu-block
-[Hipótesis:]{.block-title} Un sistema de "evaluación preventiva" automatizado de imágenes de fondo de ojo permitirá detectar tempranamente múltiples patologías, optimizando el tiempo médico y previniendo la ceguera al acelerar la derivación y tratamiento de pacientes de riesgo.[^03_hipótesis_y_objetivos-1][^03_hipótesis_y_objetivos-2]
+Un sistema de "evaluación preventiva" automatizado de imágenes de fondo de ojo permitirá detectar tempranamente múltiples patologías, optimizando el tiempo médico y previniendo la ceguera al acelerar la derivación y tratamiento de pacientes de riesgo.[^03_hipótesis_y_objetivos-1][^03_hipótesis_y_objetivos-2]
 :::
 
 [^03_hipótesis_y_objetivos-1]: @ting_development_2017
@@ -23,9 +23,9 @@
 
 - Implementar y/o replicar un modelo capaz de procesar y clasificar imágenes.
 
-- Identificar tempranamente anomalías clínicas que amenazan la visión.
+- Reconocer los conceptos matemáticos/computaciones que se involucran en cada etapa de la replicación.
 
-- Reducir los tiempos de espera entre la evaluación y la intervención médica.
+- Identificar tempranamente y correctamente anomalías clínicas que amenazan la visión.
 
 - Filtrar casos sanos para priorizar la atención de pacientes que requieren tratamiento urgente.
 :::
