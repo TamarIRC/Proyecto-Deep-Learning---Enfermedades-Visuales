@@ -2,11 +2,11 @@
 
 ## Era de la Observación Directa {.scrollable .smaller}
 
-- Observación y diagnostico por **Bocetos**.
+-   Observación y diagnostico por **Bocetos**.
 
-- **Oftalmoscopio** (Hermann von Helmholz) [^02_estado_del_arte-1]
+-   **Oftalmoscopio** (Hermann von Helmholz) [^02_estado_del_arte-1]
 
-  ![Liebreich, R. (1863). *Atlas der Ophthalmoscopie -* W. H. Wollaston, *Cámara Lúcida*, 1807.](images/IM%201.png){width="595"}
+    ![Liebreich, R. (1863). *Atlas der Ophthalmoscopie -* W. H. Wollaston, *Cámara Lúcida*, 1807.](images/IM%201.png){width="595"}
 
 [^02_estado_del_arte-1]: [@irodi_evolution_2026]
 
@@ -14,29 +14,29 @@
 
 ## Primeras implementaciones tecnológicas y rigurosas {.scrollable .smaller}
 
-- Primera **imágen** del fondo de ojo (1886).
+-   Primera **imágen** del fondo de ojo (1886).
 
-- **Angiografía** con fluoresceína (1961).
+-   **Angiografía** con fluoresceína (1961).
 
-- Oftalmoscopia Láser (1979).
+-   Oftalmoscopia Láser (1979).
 
-- Transición a la fotografía digital y la **tomografá de coherencia óptica** (OCT).
+-   Transición a la fotografía digital y la **tomografá de coherencia óptica** (OCT).
 
-  ![Jackman, W. T. & Webster, J. D. (1886). Photographing the Eye of the Living Human Retina. - Angiografía con fluoresceína de retina normal. - Smith J. Imagen de escaneo láser oftalmoscópico (SLO) - Tomografía de Coherencia Óptica (OCT)](images/IM%202.png){width="425"}
+    ![Jackman, W. T. & Webster, J. D. (1886). Photographing the Eye of the Living Human Retina. - Angiografía con fluoresceína de retina normal. - Smith J. Imagen de escaneo láser oftalmoscópico (SLO) - Tomografía de Coherencia Óptica (OCT)](images/IM%202.png){width="425"}
 
 ------------------------------------------------------------------------
 
 ## Implementaciones Computacionales {.scrollable .smaller}
 
-- Diagnóstico basado en **Machine Learning.**[^02_estado_del_arte-2]
+-   Diagnóstico basado en **Machine Learning.**[^02_estado_del_arte-2]
 
-- Maquinas de Soporte Vectorial (SVM).[^02_estado_del_arte-3]
+-   Maquinas de Soporte Vectorial (SVM).[^02_estado_del_arte-3]
 
-- Random Forest.
+-   Random Forest.
 
-- K-means. [^02_estado_del_arte-4] [^02_estado_del_arte-5]
+-   K-means. [^02_estado_del_arte-4] [^02_estado_del_arte-5]
 
-- Extraccion Manual de Características.[^02_estado_del_arte-6]
+-   Extraccion Manual de Características.[^02_estado_del_arte-6]
 
 [^02_estado_del_arte-2]: @raschka_python\_2019
 
@@ -52,17 +52,17 @@
 
 ## Implementaciones Modernas {.scrollable .smaller}
 
-- **Deep Learning** y **Redes Neuronales Convolucionales** (CNN) [^02_estado_del_arte-7]
+-   **Deep Learning** y **Redes Neuronales Convolucionales** (CNN) [^02_estado_del_arte-7]
 
-- Los modelos **igualaban o superaban** a los especialistas humanos en detectar patologias (Desde 2016)[^02_estado_del_arte-8]
+-   Los modelos **igualaban o superaban** a los especialistas humanos en detectar patologias (Desde 2016)[^02_estado_del_arte-8]
 
-- Transfer Learning (Actualidad)
+-   Transfer Learning (Actualidad)
 
-- **Interpretabilidad** del Modelo
+-   **Interpretabilidad** del Modelo
 
-- Modelos Funcionales Generalistas
+-   Modelos Funcionales Generalistas
 
-- Diseño de **IA**
+-   Diseño de **IA**
 
 [^02_estado_del_arte-7]: @perdomo_charry_systematic_2019
 
