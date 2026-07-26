@@ -85,5 +85,5 @@ Los modelos recientes han demostrado resultados comparables a especialistas:
 
     1\. Aprovechar pesos ya entrenados para detectar formas y bordes, ahorrando poder computacional.
 
-     2. Mitigar el sobreajuste (*overfitting*) en nuestra base de datos que es relativamente pequeña.
+    2\. Mitigar el sobreajuste (*overfitting*) en nuestra base de datos que es relativamente pequeña.
     :::
