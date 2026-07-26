@@ -6,7 +6,7 @@
 ::: {.nu-block .smaller}
 [**Problemática**:]{.block-title}
 
-- **Carga global de morbilidad**: Patologías como el glaucoma, la retinopatía diabética y las cataratas son las principales causas de discapacidad visual y ceguera a nivel mundial.[^04_problematica-1]
+- **Carga global de morbilidad**: Patologías como el glaucoma, la retinopatía diabética y las cataratas se encuentran entre las principales causas de discapacidad visual y ceguera a nivel mundial.[^04_problematica-1]
 
 - **Cuello de botella en el diagnóstico**: El proceso clínico actual depende del análisis manual exhaustivo de imágenes del fondo de ojo.[^04_problematica-2] Este enfoque es:
 
@@ -17,11 +17,11 @@
 - **Brecha de accesibilidad**: Existe una severa escasez de especialistas para interpretar estos exámenes, limitando drásticamente el acceso a diagnósticos oportunos en regiones rurales o desatendidas.[^04_problematica-3]
 :::
 
-[^04_problematica-1]: @dash_advancements_2024
+[^04_problematica-1]: @dash_advancements_2024 — Documenta la elevada carga de enfermedades como el glaucoma, la retinopatía diabética y las cataratas, asociadas a pérdida visual y ceguera a escala mundial.
 
-[^04_problematica-2]: @sarki_automatic_2020
+[^04_problematica-2]: @sarki_automatic_2020 — Señala que la revisión manual de imágenes de fondo de ojo requiere mucho tiempo y trabajo especializado, lo que motiva el desarrollo de sistemas automatizados.
 
-[^04_problematica-3]: @dash_advancements_2024
+[^04_problematica-3]: @sarki_automatic_2020 — Describe la falta de personal sanitario en regiones rurales y plantea la combinación de diagnóstico automatizado y telemedicina para ampliar el acceso.
 
 # Justificación {background-color="#4e2a84"}
 
@@ -30,15 +30,15 @@
 ::: {.nu-block .smaller}
 [**Justificación**:]{.block-title}
 
-- Impacto Clínico (**Prevención**): La detección temprana cambia drásticamente el pronóstico del paciente. Por ejemplo, el diagnóstico oportuno permite prevenir el daño visual severo en el 90% de los pacientes diabéticos.[^04_problematica-4]
+- Impacto Clínico (**Prevención**): La detección temprana cambia drásticamente el pronóstico del paciente y puede evitar el desarrollo de enfermedad ocular diabética en hasta el 90 % de los pacientes con diabetes.[^04_problematica-4]
 
 - Impacto Operativo (**Democratización de la Salud**): Automatizar el cribado de imágenes rompe la barrera geográfica. Permite implementar sistemas de teleoftalmología rápidos y masivos, llevando diagnósticos de nivel experto a zonas remotas.[^04_problematica-5]
 
 - Visión Sistémica (**Oculómica**): El ojo actúa como una ventana no invasiva al cuerpo. Resolver la clasificación automatizada de estas imágenes no solo previene la ceguera, sino que abre la puerta a detectar señales tempranas de enfermedades cardiovasculares, metabólicas o neurológicas antes de que presenten síntomas sistémicos.[^04_problematica-6]
 :::
 
-[^04_problematica-4]: sarki_automatic_2020
+[^04_problematica-4]: @sarki_automatic_2020 — Señala que la detección temprana puede evitar el desarrollo de enfermedad ocular diabética en una alta proporción de pacientes y reducir el riesgo de pérdida permanente de la visión.
 
-[^04_problematica-5]: @nuzzi_impact_2021
+[^04_problematica-5]: @nuzzi_impact_2021 — Explica que la teleoftalmología, combinada con inteligencia artificial, puede ampliar el cribado, reducir los tiempos de espera y facilitar la atención especializada en regiones remotas.
 
-[^04_problematica-6]: @irodi_evolution_2026
+[^04_problematica-6]: @irodi_evolution_2026 — Describe cómo los biomarcadores oculares pueden revelar señales de enfermedades cardiovasculares, metabólicas y neurodegenerativas, y cómo la inteligencia artificial amplía este potencial diagnóstico.
