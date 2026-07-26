@@ -1,5 +1,37 @@
 # Metodología Preliminar {background-color="#4e2a84"}
 
+## 1. Preprocesamiento de Datos {.smaller}
+
+Antes de que el modelo pueda "ver" las imágenes, debemos estandarizarlas. Nuestro flujo de preprocesamiento incluye:
+
+- **Redimensionamiento (Resize):** Ajustar todas las imágenes a un tamaño uniforme (ej. 224x224 píxeles).
+- **Recorte (Cropping):** Eliminar los bordes negros innecesarios de las retinografías para enfocar el globo ocular.
+- **Normalización:** Escalar los valores de los píxeles (de 0-255 a un rango de 0-1) para acelerar la convergencia del modelo.
+- **Data Augmentation:** Rotaciones, espejismos (flips) y cambios de brillo aleatorios para aumentar artificialmente nuestro set de datos y evitar el *overfitting*.
+
+## 2. ¿Por qué Redes Neuronales Convolucionales (CNN)? {.smaller}
+
+Descartamos modelos como RNN (para series temporales) o MLP (pierden la estructura espacial). Las **CNN** son ideales porque:
+
+- **Preservan la espacialidad:** Analizan la imagen mediante "parches" (filtros).
+- **Extracción de características jerárquica:**
+  - *Capas iniciales:* Detectan bordes simples (ej. el borde del disco óptico o vasos sanguíneos gruesos).
+  - *Capas profundas:* Detectan patrones complejos y anomalías específicas (ej. microaneurismas, exudados, hemorragias típicas de diabetes o glaucoma).
+
+## 3. Arquitectura y Modelo Predefinido {.smaller}
+
+No construiremos la red desde cero. Utilizaremos **Transfer Learning** con una arquitectura probada en el estado del arte (por definir entre **ResNet50** o **VGG16**).
+
+::: nu-block
+[**Flujo de Clasificación del Modelo:**]{.block-title}
+1. **Entrada:** Imagen preprocesada.
+2. **Capas Convolucionales (Backbone preentrenado):** Extraen los mapas de características del ojo.
+3. **Capa Flatten/Global Pooling:** Aplana las características espaciales a un vector unidimensional.
+4. **Capas Densas (Clasificador Final):** Capas nuevas que entrenaremos específicamente con nuestra base ODIR.
+5. **Salida (Softmax/Sigmoid):** Asigna una probabilidad matemática a cada una de las patologías (Glaucoma, Catarata, Normal, etc.).
+:::
+# Metodología Preliminar {background-color="#4e2a84"}
+
 ## Metodología Preliminar {.scrollable}
 
 A partir de la revisión de literatura y las clases del curso, se identifican tres arquitecturas principales de Deep Learning:

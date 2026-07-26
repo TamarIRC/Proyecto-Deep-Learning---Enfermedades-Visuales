@@ -64,6 +64,25 @@
 
 -   Diseño de **IA**
 
+## Desempeño en la Literatura (Accuracies) {.smaller}
+
+Los modelos recientes han demostrado resultados comparables a especialistas:
+
+- **Gulshan et al. (2016)**: Uso de *Inception-v3* para Retinopatía Diabética, logrando una sensibilidad del 90.1% y especificidad del 98.1%.
+- **Ting et al. (2017)**: Sistema Deep Learning con un *Accuracy general superior al 90%* para múltiples patologías.
+- **Modelos Multiclase Recientes**: Arquitecturas como ResNet y VGG han alcanzado precisiones promedios del **85% al 92%** en clasificación de múltiples enfermedades oculares simultáneas.
+
+## Conclusión del Estado del Arte {.smaller}
+
+::: nu-block
+[**Nuestra Elección:**]{.block-title}
+Basado en la literatura, la extracción manual de características (Machine Learning tradicional) está obsoleta para esta tarea. 
+
+El estándar de oro actual son las **Redes Neuronales Convolucionales (CNN)** apoyadas en **Transfer Learning**. Utilizaremos un modelo preentrenado (ej. *ResNet50* o *VGG16*) porque nos permite:
+1. Aprovechar pesos ya entrenados para detectar formas y bordes, ahorrando poder computacional.
+2. Mitigar el sobreajuste (*overfitting*) en nuestra base de datos que es relativamente pequeña.
+:::
+
 [^02_estado_del_arte-7]: @perdomo_charry_systematic_2019
 
 [^02_estado_del_arte-8]: @ting_development_2017

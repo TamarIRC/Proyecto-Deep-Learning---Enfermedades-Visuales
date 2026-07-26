@@ -1,31 +1,25 @@
 # Hipótesis y Objetivos {background-color="#4e2a84"}
 
-## Hipótesis {.smaller}
+## Hipótesis y "La Promesa" (Entregable) {.smaller}
+
+**Hipótesis:** Un sistema de "evaluación preventiva" automatizado basado en Deep Learning permitirá clasificar imágenes de fondo de ojo con alta precisión, optimizando el tiempo médico y acelerando la derivación de pacientes de riesgo.
 
 ::: nu-block
-Un sistema de "evaluación preventiva" automatizado de imágenes de fondo de ojo permitirá detectar tempranamente múltiples patologías, optimizando el tiempo médico y previniendo la ceguera al acelerar la derivación y tratamiento de pacientes de riesgo.[^03_hipótesis_y_objetivos-1][^03_hipótesis_y_objetivos-2]
+[**¿Qué entregaremos? (La Promesa):**]{.block-title}
+Desarrollaremos un **pipeline computacional** (script/modelo predictivo) que recibirá como entrada una fotografía del fondo de ojo de un paciente, la procesará, y entregará como salida la **probabilidad de pertenencia** a distintas clases de enfermedades oculares (Normal, Glaucoma, Catarata, etc.), actuando como un primer filtro automatizado.
 :::
 
-[^03_hipótesis_y_objetivos-1]: @ting_development_2017
+## Objetivos {.smaller}
 
-[^03_hipótesis_y_objetivos-2]: @sarki_automatic_2020
-
-------------------------------------------------------------------------
-
-## Objetivos {.smaller .scrollable}
-
-::: {.nu-block .smaller}
-[**Objetivo General**: ]{.block-title}Replicar una herramienta de Deep Learning para el proceso de evaluación médica urgente oftalmológico y automatizado para clasificar enfermedades visuales. mitigando la escasez de especialistas médicos.
+::: {.nu-block}
+[**Objetivo General**: ]{.block-title}
+Implementar una herramienta basada en Deep Learning para la clasificación automatizada de enfermedades visuales a partir de imágenes de fondo de ojo.
 :::
 
-::: {.nu-block .smaller}
+::: {.nu-block}
 [**Objetivos Específicos**:]{.block-title}
-
-- Implementar y/o replicar un modelo capaz de procesar y clasificar imágenes.
-
-- Reconocer los conceptos matemáticos/computaciones que se involucran en cada etapa de la replicación.
-
-- Identificar tempranamente y correctamente anomalías clínicas que amenazan la visión.
-
-- Filtrar casos sanos para priorizar la atención de pacientes que requieren tratamiento urgente.
+1. **Preprocesar** la base de datos ODIR (redimensionamiento, normalización y aumento de datos) para adaptarla a los requerimientos de la red neuronal.
+2. **Desarrollar** la arquitectura del modelo utilizando Transfer Learning (modelo predefinido) adaptado a clasificación multiclase.
+3. **Entrenar** el modelo computacional ajustando hiperparámetros para evitar el sobreajuste.
+4. **Evaluar** el rendimiento del modelo clasificador utilizando métricas estándar de la literatura (*Accuracy*, Sensibilidad, Especificidad).
 :::
