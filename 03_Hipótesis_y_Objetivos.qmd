@@ -24,9 +24,17 @@ Implementar una herramienta basada en Deep Learning para la clasificación autom
 
 1. **Preprocesar** la base de datos ODIR (redimensionamiento, normalización y aumento de datos) para adaptarla a los requerimientos de la red neuronal.
 
-2. **Desarrollar** la arquitectura del modelo utilizando Transfer Learning (modelo predefinido) adaptado a clasificación multiclase.
+2. **Desarrollar** la arquitectura del modelo utilizando **Transfer Learning**[^03_hipotesis_y_objetivos-2] (modelo predefinido) adaptado a clasificación multiclase.[^03_hipotesis_y_objetivos-3]
 
-3. **Entrenar** el modelo computacional ajustando hiperparámetros para evitar el sobreajuste.
+3. **Entrenar** el modelo computacional ajustando hiperparámetros[^03_hipotesis_y_objetivos-4] para evitar el sobreajuste.[^03_hipotesis_y_objetivos-5]
 
 4. **Evaluar** el rendimiento del modelo clasificador utilizando métricas estándar de la literatura (*Accuracy*, Sensibilidad, Especificidad).
 :::
+
+[^03_hipotesis_y_objetivos-2]: @aizaldeen_abdullah_review_2024 — Respalda el uso de modelos preentrenados y *Transfer Learning* en la clasificación de enfermedades oculares.
+
+[^03_hipotesis_y_objetivos-3]: @chea_classification_2021 — Respalda específicamente la clasificación multiclase de imágenes de fondo de ojo.
+
+[^03_hipotesis_y_objetivos-4]: @sarki_automatic_2020 — Revisa el ajuste de hiperparámetros utilizados en modelos de Deep Learning para la detección de enfermedades oculares.
+
+[^03_hipotesis_y_objetivos-5]: @chea_classification_2021 — Describe el uso de técnicas como *early stopping* y *dropout* para prevenir el sobreajuste durante el entrenamiento.
