@@ -1,7 +1,7 @@
 # Planteamiento del problema {background-color="#4e2a84"}
 
 
-## Nuestra Problematica {.smaller .scrollable}
+## Nuestra Problemática {.smaller .scrollable}
 
 ::: {.nu-block .smaller}
 [**Problemática**:]{.block-title}
