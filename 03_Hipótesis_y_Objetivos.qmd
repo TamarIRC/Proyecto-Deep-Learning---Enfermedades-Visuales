@@ -1,25 +1,32 @@
 # Hipótesis y Objetivos {background-color="#4e2a84"}
 
-## Hipótesis y "La Promesa" (Entregable) {.smaller}
+## Hipótesis {.smaller}
 
 **Hipótesis:** Un sistema de "evaluación preventiva" automatizado basado en Deep Learning permitirá clasificar imágenes de fondo de ojo con alta precisión, optimizando el tiempo médico y acelerando la derivación de pacientes de riesgo.
 
 ::: nu-block
-[**¿Qué entregaremos? (La Promesa):**]{.block-title}
-Desarrollaremos un **pipeline computacional** (script/modelo predictivo) que recibirá como entrada una fotografía del fondo de ojo de un paciente, la procesará, y entregará como salida la **probabilidad de pertenencia** a distintas clases de enfermedades oculares (Normal, Glaucoma, Catarata, etc.), actuando como un primer filtro automatizado.
+[**¿Qué entregaremos?:**]{.block-title}
+Desarrollaremos un **pipeline computacional**[^03_hipotesis_y_objetivos-1] (script/modelo predictivo) que recibirá como entrada una fotografía del fondo de ojo de un paciente, la procesará, y entregará como salida la **probabilidad de pertenencia** a distintas clases de enfermedades oculares (Normal, Glaucoma, Catarata, etc.), actuando como un primer filtro automatizado.
 :::
 
-## Objetivos {.smaller}
+[^03_hipotesis_y_objetivos-1]: @raschka_python_2019
+
+## Objetivos {.scrollable .smaller}
 
 ::: {.nu-block}
 [**Objetivo General**: ]{.block-title}
+
 Implementar una herramienta basada en Deep Learning para la clasificación automatizada de enfermedades visuales a partir de imágenes de fondo de ojo.
 :::
 
 ::: {.nu-block}
 [**Objetivos Específicos**:]{.block-title}
+
 1. **Preprocesar** la base de datos ODIR (redimensionamiento, normalización y aumento de datos) para adaptarla a los requerimientos de la red neuronal.
+
 2. **Desarrollar** la arquitectura del modelo utilizando Transfer Learning (modelo predefinido) adaptado a clasificación multiclase.
+
 3. **Entrenar** el modelo computacional ajustando hiperparámetros para evitar el sobreajuste.
+
 4. **Evaluar** el rendimiento del modelo clasificador utilizando métricas estándar de la literatura (*Accuracy*, Sensibilidad, Especificidad).
 :::
