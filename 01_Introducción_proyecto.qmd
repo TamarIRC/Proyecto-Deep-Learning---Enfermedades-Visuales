@@ -1,4 +1,3 @@
-# Planteamiento del problema {background-color="#4e2a84"}
 
 ## Contexto de los Datos {.smaller .scrollable}
 
