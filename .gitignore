@@ -6,3 +6,7 @@
 Presentación.html
 Presentación_files
 /index.html
+/_site/
+
+/.quarto/
+**/*.quarto_ipynb
