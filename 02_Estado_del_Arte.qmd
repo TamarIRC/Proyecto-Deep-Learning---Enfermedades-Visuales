@@ -2,88 +2,192 @@
 
 ## Era de la Observación Directa {.scrollable .smaller}
 
--   Observación y diagnostico por **Bocetos**.
+El diagnóstico ocular evolucionó desde la representación mediante bocetos hasta la observación directa del fondo de ojo con el oftalmoscopio.[^02_estado_del_arte-1]
 
--   **Oftalmoscopio** (Hermann von Helmholz) [^02_estado_del_arte-1]
+[^02_estado_del_arte-1]: @irodi_evolution_2026 — Describe la transición desde la observación directa y los bocetos manuales hasta la invención del oftalmoscopio de Helmholtz en 1851, que permitió visualizar la retina humana viva.
 
-    ![Liebreich, R. (1863). *Atlas der Ophthalmoscopie -* W. H. Wollaston, *Cámara Lúcida*, 1807.](images/IM%201.png){width="595"}
+::::::::::: columns
+:::::: {.column width="48%"}
+::: historical-figure-title
+**1. Observación mediante bocetos**
+:::
 
-[^02_estado_del_arte-1]: [@irodi_evolution_2026]
+:::: historical-figure
+![](Imágenes%20Presentación/1.png){fig-alt="Ilustración histórica del fondo ocular realizada en 1853" width="72%"}
+
+::: image-source
+*Fondo ocular*. Van Trigt, A. C. (1853),<br> *Dissertatio ophthalmologica inauguralis*.<br> Dominio público.
+:::
+::::
+::::::
+
+:::::: {.column width="48%"}
+::: historical-figure-title
+**2. Oftalmoscopio de Helmholtz**
+:::
+
+:::: historical-figure
+![](Imágenes%20Presentación/2.png){fig-alt="Ilustración histórica del oftalmoscopio de Hermann von Helmholtz" width="62%"}
+
+::: image-source
+Oftalmoscopio de Helmholtz, ca. década de 1850.<br> Wellcome Collection (CC BY).
+:::
+::::
+::::::
+:::::::::::
 
 ------------------------------------------------------------------------
 
 ## Primeras implementaciones tecnológicas y rigurosas {.scrollable .smaller}
 
--   Primera **imágen** del fondo de ojo (1886).
+La evolución de la imagen retiniana permitió pasar del registro fotográfico a técnicas capaces de visualizar la circulación y las capas de la retina.[^02_estado_del_arte-2]
 
--   **Angiografía** con fluoresceína (1961).
+[^02_estado_del_arte-2]: @irodi_evolution_2026 — Sintetiza la evolución de la imagen retiniana desde la fotografía analógica y la angiografía hasta las modalidades digitales y la OCT, que permitieron obtener mediciones más precisas y detalladas de la retina.
 
--   Oftalmoscopia Láser (1979).
+::::::::::: {.columns .technology-row}
+:::::: {.column width="48%"}
+::: historical-figure-title
+**1. 1886 — Primera fotografía del fondo de ojo**
+:::
 
--   Transición a la fotografía digital y la **tomografá de coherencia óptica** (OCT).
+:::: historical-figure
+![](Imágenes%20Presentación/3.jpg){fig-alt="Publicación de 1886 que contiene una de las primeras fotografías del fondo de ojo humano" width="68%"}
 
-    ![Jackman, W. T. & Webster, J. D. (1886). Photographing the Eye of the Living Human Retina. - Angiografía con fluoresceína de retina normal. - Smith J. Imagen de escaneo láser oftalmoscópico (SLO) - Tomografía de Coherencia Óptica (OCT)](images/IM%202.png){width="425"}
+::: image-source
+Jackman, W. T. y Webster, J. D. (1886),<br> *Photographing the Eye of the Living Human Retina*.
+:::
+::::
+::::::
+
+:::::: {.column width="48%"}
+::: historical-figure-title
+**2. 1961 — Angiografía con fluoresceína**
+:::
+
+:::: historical-figure
+![](Imágenes%20Presentación/4.jpg){fig-alt="Secuencia de angiografía fluoresceínica de la retina" width="68%"}
+
+::: image-source
+Secuencia de angiografía fluoresceínica de la retina.
+:::
+::::
+::::::
+:::::::::::
+
+::::::::::: {.columns .technology-row}
+:::::: {.column width="48%"}
+::: historical-figure-title
+**3. 1979 — Oftalmoscopia láser**
+:::
+
+:::: historical-figure
+![](Imágenes%20Presentación/5.jpg){fig-alt="Imagen retiniana de campo amplio obtenida mediante oftalmoscopia láser de barrido" width="82%"}
+
+::: image-source
+Imagen retiniana obtenida mediante oftalmoscopia láser de barrido (SLO).
+:::
+::::
+::::::
+
+:::::: {.column width="48%"}
+::: historical-figure-title
+**4. Era digital — Fotografía digital y OCT**
+:::
+
+:::: historical-figure
+![](Imágenes%20Presentación/6.webp){fig-alt="Estudio de la retina y del nervio óptico mediante tomografía de coherencia óptica" width="82%"}
+
+::: image-source
+Estudio retiniano mediante tomografía de coherencia óptica (OCT).
+:::
+::::
+::::::
+:::::::::::
 
 ------------------------------------------------------------------------
 
 ## Implementaciones Computacionales {.scrollable .smaller}
 
--   Diagnóstico basado en **Machine Learning.**[^02_estado_del_arte-2]
+-   Diagnóstico basado en **Machine Learning**.[^02_estado_del_arte-3]
 
--   Maquinas de Soporte Vectorial (SVM).[^02_estado_del_arte-3]
+-   Máquinas de vectores de soporte (SVM).[^02_estado_del_arte-4]
 
--   Random Forest.
+-   Random Forest.[^02_estado_del_arte-5]
 
--   K-means. [^02_estado_del_arte-4] [^02_estado_del_arte-5]
+-   K-means.[^02_estado_del_arte-6]
 
--   Extraccion Manual de Características.[^02_estado_del_arte-6]
+-   Extracción manual de características.[^02_estado_del_arte-7]
 
-[^02_estado_del_arte-2]: @raschka_python\_2019
+[^02_estado_del_arte-3]: @sarhan_machine_2020 — Revisa la aplicación de técnicas de *Machine Learning* para el diagnóstico y procesamiento de imágenes oftalmológicas.
 
-[^02_estado_del_arte-3]: @raschka_python_2019
+[^02_estado_del_arte-4]: @raschka_python_2019 — Presenta las máquinas de vectores de soporte como modelos de clasificación basados en la maximización del margen y el uso de funciones kernel.
 
-[^02_estado_del_arte-4]: @sarki_automatic_2020
+[^02_estado_del_arte-5]: @sarki_automatic_2020 — Documenta el uso de Random Forest como clasificador, incluyendo su combinación con modelos convolucionales para detectar enfermedades oculares.
 
-[^02_estado_del_arte-5]: @sarhan_machine_2020
+[^02_estado_del_arte-6]: @raschka_python_2019 — Explica K-means como un método de aprendizaje no supervisado que agrupa observaciones según su similitud.
 
-[^02_estado_del_arte-6]: @sarhan_machine_2020
+[^02_estado_del_arte-7]: @sarhan_machine_2020 — Distingue entre características definidas manualmente y características extraídas automáticamente mediante redes convolucionales en imágenes oftalmológicas.
 
 ------------------------------------------------------------------------
 
 ## Implementaciones Modernas {.scrollable .smaller}
 
--   **Deep Learning** y **Redes Neuronales Convolucionales** (CNN) [^02_estado_del_arte-7]
+-   **Deep Learning** y **Redes Neuronales Convolucionales (CNN)** para analizar imágenes oculares.[^02_estado_del_arte-8]
 
--   Los modelos **igualaban o superaban** a los especialistas humanos en detectar patologias (Desde 2016)[^02_estado_del_arte-8]
+-   Desde 2016–2017, algunos sistemas alcanzaron un **rendimiento diagnóstico comparable al de evaluadores profesionales**.[^02_estado_del_arte-9]
 
--   Transfer Learning (Actualidad)
+-   **Transfer Learning** para adaptar redes preentrenadas al diagnóstico de enfermedades oculares.[^02_estado_del_arte-10]
 
--   **Interpretabilidad** del Modelo
+-   **Interpretabilidad del modelo** para comprender qué información sustenta sus predicciones.[^02_estado_del_arte-11]
 
--   Modelos Funcionales Generalistas
+-   **Modelos fundacionales y generalizables**, capaces de adaptarse a diferentes tareas y conjuntos de datos oftalmológicos.[^02_estado_del_arte-12]
 
--   Diseño de **IA**
+-   **Diseño responsable e integración clínica de la IA**, considerando validación, privacidad, equidad y supervisión profesional.[^02_estado_del_arte-13]
 
-[^02_estado_del_arte-7]: @perdomo_charry_systematic_2019
+[^02_estado_del_arte-8]: @perdomo_charry_systematic_2019 — Revisa el uso exitoso de métodos de *Deep Learning*, especialmente CNN, para analizar imágenes de fondo de ojo y OCT y detectar enfermedades oculares.
 
-[^02_estado_del_arte-8]: @ting_development_2017
+[^02_estado_del_arte-9]: @ting_development_2017 — Valida un sistema de *Deep Learning* con 494 661 imágenes retinianas y reporta alta sensibilidad y especificidad para detectar retinopatía diabética, glaucoma y degeneración macular, utilizando evaluadores profesionales como referencia.
 
-## Desempeño en la Literatura {.smaller}
+[^02_estado_del_arte-10]: @sarki_automatic_2020 — Señala que 38 de los 65 estudios revisados utilizaron *Transfer Learning* para detectar enfermedades oculares mediante imágenes de fondo de ojo.
 
-Los modelos recientes han demostrado resultados comparables a especialistas:
+[^02_estado_del_arte-11]: @jin_artificial_2022 — Identifica la explicabilidad y la confianza clínica como desafíos centrales antes de incorporar modelos de IA a la práctica oftalmológica.
 
--   **Gulshan et al. (2016)**: Uso de *Inception-v3* para Retinopatía Diabética, logrando una sensibilidad del 90.1% y especificidad del 98.1%.
--   **Ting et al. (2017)**: Sistema Deep Learning con un *Accuracy general superior al 90%* para múltiples patologías.
--   **Modelos Multiclase Recientes**: Arquitecturas como ResNet y VGG han alcanzado precisiones promedios del **85% al 92%** en clasificación de múltiples enfermedades oculares simultáneas.
+[^02_estado_del_arte-12]: @irodi_evolution_2026 — Describe el desarrollo de modelos fundacionales y modelos visión-lenguaje entrenados con datos diversos para generalizar entre distintas tareas y dominios oftalmológicos.
 
-## Conclusión del Estado del Arte {.smaller}
+[^02_estado_del_arte-13]: [@jin_artificial_2022; @dash_advancements_2024] — Señalan que la adopción clínica requiere validación externa, protección de la privacidad, evaluación ética, interpretabilidad e integración segura en los flujos de trabajo médicos.
 
--   ::: nu-block
-    [**Nuestra Elección:**]{.block-title} Basado en la literatura, la extracción manual de características (Machine Learning tradicional) está obsoleta para esta tarea.
+## Desempeño en la Literatura {.scrollable .smaller}
 
-    El estándar de oro actual son las **Redes Neuronales Convolucionales (CNN)** apoyadas en **Transfer Learning**. Utilizaremos un modelo preentrenado (ej. *ResNet* o *VGG16*) porque nos permite:
+En tareas diagnósticas específicas, algunos modelos han alcanzado un rendimiento comparable al de evaluadores profesionales:
 
-    1\. Aprovechar pesos ya entrenados para detectar formas y bordes, ahorrando poder computacional.
+-   **Gulshan et al. (2016):** Utilizaron *Inception-v3* para detectar retinopatía diabética referible, alcanzando una sensibilidad del **90,3%** y una especificidad del **98,1%**.[^02_estado_del_arte-14]
 
-    2\. Mitigar el sobreajuste (*overfitting*) en nuestra base de datos que es relativamente pequeña.
-    :::
+-   **Ting et al. (2017):** Validaron un sistema de *Deep Learning* para retinopatía diabética y otras enfermedades oculares, con sensibilidades entre **90,5% y 100%** y especificidades entre **87,2% y 91,6%**, según la patología evaluada.[^02_estado_del_arte-15]
+
+-   **Clasificación multiclase:** Chea y Nam (2021) utilizaron **ResNet-50** para clasificar cuatro categorías de imágenes de fondo de ojo, obteniendo una exactitud promedio del **85,79%** y un resultado máximo del **91,16%**.[^02_estado_del_arte-16]
+
+[^02_estado_del_arte-14]: @gulshan_development_2016 — Evaluó *Inception-v3*, una CNN que combina filtros convolucionales de distintos tamaños. La **sensibilidad** indica qué proporción de los pacientes con la enfermedad es detectada correctamente; la **especificidad**, qué proporción de los pacientes sin la enfermedad es descartada correctamente.
+
+[^02_estado_del_arte-15]: @ting_development_2017 — Evaluó el sistema con 494 661 imágenes y comparó sus resultados con evaluadores profesionales. El estudio presenta sensibilidad y especificidad por patología, no una única medida de *accuracy* general.
+
+[^02_estado_del_arte-16]: @chea_classification_2021 — La **exactitud global (*accuracy*)** es la proporción total de predicciones correctas. **ResNet** utiliza conexiones de atajo que facilitan el entrenamiento de redes profundas; **VGG** utiliza una estructura secuencial de capas convolucionales pequeñas. El estudio comparó estas arquitecturas y obtuvo su mejor resultado multiclase con ResNet-50.
+
+## Conclusión del Estado del Arte {.scrollable .smaller}
+
+::: nu-block
+[**Nuestra elección:**]{.block-title}
+
+La literatura muestra que la extracción manual de características ha sido ampliamente desplazada por métodos que aprenden automáticamente la información relevante de las imágenes.[^02_estado_del_arte-17]
+
+Por esta razón, utilizaremos una **Red Neuronal Convolucional (CNN)** mediante **Transfer Learning**, con una arquitectura preentrenada por definir entre **ResNet50** y **VGG16**.[^02_estado_del_arte-18]
+
+Esta estrategia nos permite:
+
+1.  **Reutilizar características visuales aprendidas previamente**, como bordes, texturas y formas, reduciendo el tiempo y los recursos necesarios para entrenar el modelo.
+
+2.  **Mejorar la generalización del modelo** y disminuir el riesgo de sobreajuste (*overfitting*) al trabajar con una base de datos relativamente pequeña.
+:::
+
+[^02_estado_del_arte-17]: @sarhan_machine_2020 — Contrasta la extracción manual de características con las CNN, que aprenden automáticamente las características relevantes directamente desde las imágenes oftalmológicas.
+
+[^02_estado_del_arte-18]: [@sarki_automatic_2020; @raschka_python_2019] — Respaldan el uso de redes preentrenadas y *Transfer Learning* para reutilizar representaciones visuales, reducir las necesidades de entrenamiento y trabajar con conjuntos de datos limitados. \>\>\>\>\>\>\> 1bc00d29e464a831aa23aa19ededff3cbf1c91e0
