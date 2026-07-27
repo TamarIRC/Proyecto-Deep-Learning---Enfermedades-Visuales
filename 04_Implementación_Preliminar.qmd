@@ -1,43 +1,69 @@
 # Metodología Preliminar {background-color="#4e2a84"}
 
-## 1. Preprocesamiento de Datos {.smaller}
+## 1. Preprocesamiento de Datos {.scrollable .smaller}
 
 Antes de que el modelo pueda "ver" las imágenes, debemos estandarizarlas. Nuestro flujo de preprocesamiento incluye:
 
-- **Redimensionamiento (Resize):** Ajustar todas las imágenes a un tamaño uniforme (ej. 224x224 píxeles).
-- **Recorte (Cropping):** Eliminar los bordes negros innecesarios de las retinografías para enfocar el globo ocular.
-- **Normalización:** Escalar los valores de los píxeles (de 0-255 a un rango de 0-1) para acelerar la convergencia del modelo.
-- **Data Augmentation:** Rotaciones, espejismos (flips) y cambios de brillo aleatorios para aumentar artificialmente nuestro set de datos y evitar el *overfitting*.
+- **Redimensionamiento (*Resize*):** Ajustar todas las imágenes a un tamaño uniforme (ej. 224×224 píxeles).[^04_implementación_preliminar-1]
+- **Recorte (*Cropping*):** Eliminar los bordes negros innecesarios de las retinografías para enfocar la región de interés.[^04_implementación_preliminar-2]
+- **Normalización:** Escalar los valores de los píxeles de 0–255 al rango `[0,1]` para facilitar el entrenamiento del modelo.[^04_implementación_preliminar-3]
+- **Data Augmentation:** Aplicar rotaciones, reflejos horizontales (*flips*) y cambios de brillo para aumentar artificialmente el conjunto de datos y reducir el *overfitting*.[^04_implementación_preliminar-4]
 
-## 2. ¿Por qué Redes Neuronales Convolucionales (CNN)? {.smaller}
+## 2. ¿Por qué Redes Neuronales Convolucionales (CNN)? {.scrollable .smaller}
 
-Descartamos modelos como RNN (para series temporales) o MLP (pierden la estructura espacial). Las **CNN** son ideales porque:
+Para seleccionar la arquitectura, comparamos su adecuación al tipo de entrada del proyecto: imágenes estáticas de fondo de ojo.
 
-- **Preservan la espacialidad:** Analizan la imagen mediante "parches" (filtros).
-- **Extracción de características jerárquica:**
-  - *Capas iniciales:* Detectan bordes simples (ej. el borde del disco óptico o vasos sanguíneos gruesos).
-  - *Capas profundas:* Detectan patrones complejos y anomalías específicas (ej. microaneurismas, exudados, hemorragias típicas de diabetes o glaucoma).
+- **RNN/LSTM (Descartadas):** Están diseñadas para modelar dependencias en datos secuenciales o temporales, como texto, audio y series de tiempo. Como nuestro modelo recibe una imagen estática, el procesamiento recurrente no aporta una ventaja directa.[^04_implementación_preliminar-5]
 
-## 3. Arquitectura y Modelo Predefinido {.smaller}
+- **MLP (Descartadas):** Requieren aplanar la matriz de píxeles en un vector, ignorando su estructura espacial y la relación de cercanía entre píxeles. Además, su conectividad total hace que la cantidad de parámetros crezca rápidamente con la resolución de la imagen.[^04_implementación_preliminar-6]
+
+- **CNN (Arquitectura seleccionada):** Aprovechan la estructura espacial mediante convoluciones, localidad y parámetros compartidos. Sus capas aprenden jerarquías de características, desde bordes y texturas hasta patrones o lesiones complejas, utilizando menos parámetros que una MLP completamente conectada.[^04_implementación_preliminar-7]
+
+- **Precaución metodológica:** Aunque son adecuadas para imágenes, las CNN pueden sufrir sobreajuste cuando se entrenan con conjuntos de datos médicos limitados o desbalanceados. Por ello utilizaremos *Data Augmentation*, *Transfer Learning* y técnicas de regularización.[^04_implementación_preliminar-8]
+
+## 3. Arquitectura y Modelo Predefinido {.scrollable .smaller}
 
 No construiremos la red desde cero. Utilizaremos **Transfer Learning** con una arquitectura probada en el estado del arte (por definir entre **ResNet50** o **VGG16**).
 
-::: nu-block
+::: {.nu-block}
 [**Flujo de Clasificación del Modelo:**]{.block-title}
-1. **Entrada:** Imagen preprocesada.
-2. **Capas Convolucionales (Backbone preentrenado):** Extraen los mapas de características del ojo.
-3. **Capa Flatten/Global Pooling:** Aplana las características espaciales a un vector unidimensional.
-4. **Capas Densas (Clasificador Final):** Capas nuevas que entrenaremos específicamente con nuestra base ODIR.
-5. **Salida (Softmax/Sigmoid):** Asigna una probabilidad matemática a cada una de las patologías (Glaucoma, Catarata, Normal, etc.).
+
+1. **Imagen de entrada:** El modelo recibe una retinografía previamente redimensionada, recortada y normalizada.[^04_implementación_preliminar-9]
+
+2. **Extracción de características (*backbone* preentrenado):** La CNN reutiliza conocimientos aprendidos previamente para identificar bordes, texturas, formas y posibles anomalías en el ojo.[^04_implementación_preliminar-10]
+
+3. **Resumen de características (*Flatten* o *Global Pooling*):** Los patrones detectados se convierten en un conjunto compacto de números, llamado vector, que puede ser procesado por el clasificador.[^04_implementación_preliminar-11]
+
+4. **Clasificación (capas densas):** Estas capas se entrenan con la base ODIR para aprender qué combinaciones de características corresponden a cada enfermedad.[^04_implementación_preliminar-12]
+
+5. **Resultado:** El modelo entrega una probabilidad para cada diagnóstico. Se utilizará *Softmax* si cada imagen pertenece a una sola clase o *Sigmoid* si pueden coexistir varias enfermedades.[^04_implementación_preliminar-13]
 :::
 
 
-[^04_implementación_preliminar-1]: @zhang_dive_2021
+[^04_implementación_preliminar-1]: @sarki_automatic_2020 — Documenta el redimensionamiento de retinografías a 224×224 píxeles para adaptarlas a la entrada de redes convolucionales preentrenadas.
 
-[^04_implementación_preliminar-2]: @zhang_dive_2021
+[^04_implementación_preliminar-2]: @sarki_automatic_2020 — Describe la eliminación de los bordes negros de las imágenes de fondo de ojo para concentrar el análisis en la región de interés.
 
-[^04_implementación_preliminar-3]: @zhang_dive_2021
+[^04_implementación_preliminar-3]: @aizaldeen_abdullah_review_2024 — Identifica la normalización de los píxeles al rango `[0,1]` como una etapa habitual del preprocesamiento de imágenes oculares.
 
-[^04_implementación_preliminar-4]: @sarki_automatic_2020
+[^04_implementación_preliminar-4]: @chea_classification_2021 — Aplica rotaciones, cambios de brillo, ampliaciones y reflejos horizontales para aumentar y equilibrar un conjunto multiclase de imágenes de fondo de ojo.
+
+[^04_implementación_preliminar-5]: @zhang_dive_2021 — Presenta las RNN y LSTM como arquitecturas orientadas a capturar dependencias y dinámicas en datos secuenciales.
+
+[^04_implementación_preliminar-6]: @zhang_dive_2021 — Explica que una MLP aplana las imágenes, ignora su estructura espacial y requiere una gran cantidad de parámetros al utilizar capas totalmente conectadas.
+
+[^04_implementación_preliminar-7]: @zhang_dive_2021 — Justifica las CNN mediante los principios de localidad y parámetros compartidos, que permiten extraer características espaciales con menos parámetros.
+
+[^04_implementación_preliminar-8]: @bali_analysis_2024 — Advierte que los conjuntos de imágenes oculares limitados y desbalanceados pueden producir sobreajuste y reducir la capacidad de generalización del modelo.
+
+[^04_implementación_preliminar-9]: @sarki_automatic_2020 — Describe el preprocesamiento de las retinografías antes de utilizarlas como entrada de una arquitectura de Deep Learning.
+
+[^04_implementación_preliminar-10]: @sarki_automatic_2020 — Explica que el *Transfer Learning* reutiliza características aprendidas previamente, desde bordes y texturas hasta estructuras específicas del ojo.
+
+[^04_implementación_preliminar-11]: @aizaldeen_abdullah_review_2024 — Describe el uso de *Flatten* o *Global Average Pooling* para convertir los mapas de características en un vector numérico.
+
+[^04_implementación_preliminar-12]: @sarki_convolutional_2018 — Implementa capas completamente conectadas que reciben las características extraídas y realizan la clasificación multiclase de enfermedades oculares.
+
+[^04_implementación_preliminar-13]: [@sarki_convolutional_2018; @zhang_dive_2021] — Sarki et al. utilizan *Softmax* para clasificar cinco clases de enfermedades oculares; Zhang et al. explican el uso de *Softmax* para clases excluyentes y de *Sigmoid* para salidas binarias independientes.
 
 # Referencias
