@@ -162,7 +162,15 @@ En tareas diagnósticas específicas, algunos modelos han alcanzado un rendimien
 
 -   **Gulshan et al. (2016):** Utilizaron *Inception-v3* para detectar retinopatía diabética referible, alcanzando una sensibilidad del **90,3%** y una especificidad del **98,1%**.[^02_estado_del_arte-14]
 
+<<<<<<< HEAD
 -   **Ting et al. (2017):** Validaron un sistema de *Deep Learning* para retinopatía diabética y otras enfermedades oculares, con sensibilidades entre **90,5% y 100%** y especificidades entre **87,2% y 91,6%**, según la patología evaluada.[^02_estado_del_arte-15]
+=======
+<<<<<<< HEAD
+    2\. Mitigar el sobreajuste (*overfitting*) en nuestra base de datos que es relativamente pequeña.
+    :::
+=======
+-   **Ting et al. (2017):** Validaron un sistema de *Deep Learning* para retinopatía diabética y otras enfermedades oculares, con sensibilidades entre **90,5% y 100%** y especificidades entre **87,2% y 91,6%**, según la patología evaluada.[^02_estado_del_arte-14]
+>>>>>>> a01c154a996927780f6bb24df829a29a8c72911b
 
 -   **Clasificación multiclase:** Chea y Nam (2021) utilizaron **ResNet-50** para clasificar cuatro categorías de imágenes de fondo de ojo, obteniendo una exactitud promedio del **85,79%** y un resultado máximo del **91,16%**.[^02_estado_del_arte-16]
 
@@ -190,4 +198,9 @@ Esta estrategia nos permite:
 
 [^02_estado_del_arte-17]: @sarhan_machine_2020 — Contrasta la extracción manual de características con las CNN, que aprenden automáticamente las características relevantes directamente desde las imágenes oftalmológicas.
 
+<<<<<<< HEAD
 [^02_estado_del_arte-18]: [@sarki_automatic_2020; @raschka_python_2019] — Respaldan el uso de redes preentrenadas y *Transfer Learning* para reutilizar representaciones visuales, reducir las necesidades de entrenamiento y trabajar con conjuntos de datos limitados. \>\>\>\>\>\>\> 1bc00d29e464a831aa23aa19ededff3cbf1c91e0
+=======
+[^02_estado_del_arte-17]: [@sarki_automatic_2020; @raschka_python_2019] — Respaldan el uso de redes preentrenadas y *Transfer Learning* para reutilizar representaciones visuales, reducir las necesidades de entrenamiento y trabajar con conjuntos de datos limitados.
+>>>>>>> 1bc00d29e464a831aa23aa19ededff3cbf1c91e0
+>>>>>>> a01c154a996927780f6bb24df829a29a8c72911b
