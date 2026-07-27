@@ -1,15 +1,5 @@
 # Metodología Preliminar {background-color="#4e2a84"}
 
-## Flujo General de la Metodología {.scrollable .smaller}
-
-<div style="text-align: center;">
-<img src="Imágenes Presentación/flujo_metodologia_preliminar.png" alt="Diagrama vertical del flujo metodológico preliminar, desde la base ODIR hasta la evaluación del modelo." style="width: 88%;">
-</div>
-
-*Figura: Flujo preliminar para la clasificación de enfermedades oculares.*[^04_implementación_preliminar-flujo]
-
-[^04_implementación_preliminar-flujo]: [@sarki_automatic_2020; @chea_classification_2021; @raschka_python_2019] — Respaldan las etapas de preprocesamiento, aumento de datos, reutilización de redes preentrenadas, entrenamiento del clasificador y evaluación del desempeño.
-
 ## 1. Preprocesamiento de Datos {.scrollable .smaller}
 
 Antes de que el modelo pueda "ver" las imágenes, debemos estandarizarlas. Nuestro flujo de preprocesamiento incluye:
