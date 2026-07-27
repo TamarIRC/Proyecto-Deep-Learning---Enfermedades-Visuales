@@ -10,6 +10,7 @@ author:
     affiliations: ""
 format: 
   revealjs:
+    output-file: index.html
     theme: [default, tema_custom.scss] # Aquí llamamos a tu nuevo diseño
     slide-number: c/t                  # Muestra el número como fracción (current/total)
     progress: true                     # Agrega la barra de progreso inferior
