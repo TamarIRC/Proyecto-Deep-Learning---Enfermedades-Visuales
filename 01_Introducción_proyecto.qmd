@@ -1,6 +1,10 @@
 
 ## Contexto de los Datos {.smaller .scrollable}
 
+::: {.panel-tabset}
+
+### Distribución de clases
+
 ::: nu-block
 [Composición de la Base de Datos Ocular]{.block-title}
 
@@ -18,7 +22,31 @@
 : Frecuencia de clases en la base de datos
 :::
 
-## Gráfico de Frecuencias
+::: {.dataset-source}
+**Fuente del dataset:** [ODIR-5K — Ocular Disease Recognition (Kaggle)](https://www.kaggle.com/datasets/andrewmvd/ocular-disease-recognition-odir5k?resource=download)
+:::
+
+### Retinografías de ODIR
+
+::: {.odir-samples}
+[Ejemplos reales de imágenes de fondo de ojo incluidas en la base de datos]{.odir-samples-title}
+
+::: {.odir-image-grid}
+![](Imágenes%20Presentación/7.jpg){fig-alt="Retinografía de fondo de ojo de la base ODIR, muestra 1"}
+
+![](Imágenes%20Presentación/8.jpg){fig-alt="Retinografía de fondo de ojo de la base ODIR, muestra 2"}
+
+![](Imágenes%20Presentación/9.jpg){fig-alt="Retinografía de fondo de ojo de la base ODIR, muestra 3"}
+
+![](Imágenes%20Presentación/10.jpg){fig-alt="Retinografía de fondo de ojo de la base ODIR, muestra 4"}
+
+![](Imágenes%20Presentación/11.jpg){fig-alt="Retinografía de fondo de ojo de la base ODIR, muestra 5"}
+
+![](Imágenes%20Presentación/12.jpg){fig-alt="Retinografía de fondo de ojo de la base ODIR, muestra 6"}
+:::
+:::
+
+### Gráfico de Frecuencias
 
 ```{r}
 #| echo: false
@@ -59,3 +87,41 @@ mtext("Cantidad de imágenes", side = 1, line = 3.5, col = "#333333", font = 2)
 mtext("Patologías", side = 2, line = 9, col = "#333333", font = 2)
 
 ```
+
+### Visualizador del dataset
+
+::: {.odir-viewer}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+datos_odir <- readxl::read_excel("Dataset/data.xlsx")
+
+DT::datatable(
+  datos_odir,
+  rownames = FALSE,
+  filter = "top",
+  caption = htmltools::tags$caption("ODIR: 3.500 registros y 15 variables"),
+  options = list(
+    pageLength = 5,
+    lengthMenu = list(c(5, 10, 25), c("5", "10", "25")),
+    scrollX = TRUE,
+    scrollY = "260px",
+    scrollCollapse = TRUE,
+    autoWidth = FALSE
+  ),
+  class = "compact stripe hover"
+)
+```
+
+<script>
+document.addEventListener("tabby", function () {
+  if (window.jQuery && jQuery.fn.dataTable) {
+    jQuery.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+  }
+});
+</script>
+:::
+:::

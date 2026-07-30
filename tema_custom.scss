@@ -144,4 +144,74 @@ $progress-color: $theme-purple;
   margin-bottom: 1em;
 }
 
+// --- MUESTRAS DE LA BASE ODIR ---
+
+.reveal .odir-samples {
+  margin: 0.45em auto 0;
+  text-align: center;
+}
+
+.reveal .odir-samples-title {
+  color: $theme-purple;
+  display: block;
+  font-size: 0.58em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.reveal .odir-image-grid {
+  display: grid;
+  gap: 0.35em;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.reveal .odir-image-grid p {
+  line-height: 0;
+  margin: 0;
+}
+
+.reveal .odir-image-grid img {
+  aspect-ratio: 4 / 3;
+  border: 2px solid #d9d0e5;
+  border-radius: 4px;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.reveal .odir-viewer {
+  margin-top: 0.35em;
+}
+
+.reveal .odir-viewer .dataTables_wrapper {
+  font-size: 0.62em;
+}
+
+.reveal .odir-viewer .dataTables_filter,
+.reveal .odir-viewer .dataTables_length {
+  margin-bottom: 0.35em;
+}
+
+.reveal .odir-viewer .dataTables_scrollBody {
+  border-bottom: 1px solid #d9d0e5;
+}
+
+.reveal .dataset-source {
+  color: #666666;
+  font-size: 0.54em;
+  margin: 0.45em 0 0;
+  text-align: right;
+}
+
+.reveal .dataset-source p {
+  margin: 0;
+}
+
+.reveal .dataset-source a {
+  color: #666666;
+  text-decoration: underline;
+}
+
 

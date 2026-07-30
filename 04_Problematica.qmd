@@ -34,11 +34,13 @@
 
 - Impacto Operativo (**Democratización de la Salud**): Automatizar el cribado de imágenes rompe la barrera geográfica. Permite implementar sistemas de teleoftalmología rápidos y masivos, llevando diagnósticos de nivel experto a zonas remotas.[^04_problematica-5]
 
-- Visión Sistémica (**Oculómica**): El ojo actúa como una ventana no invasiva al cuerpo. Resolver la clasificación automatizada de estas imágenes no solo previene la ceguera, sino que abre la puerta a detectar señales tempranas de enfermedades cardiovasculares, metabólicas o neurológicas antes de que presenten síntomas sistémicos.[^04_problematica-6]
+- Visión Sistémica (**Oculómica**): El ojo actúa como una ventana no invasiva al cuerpo. Resolver la clasificación automatizada de estas imágenes[^04_problematica-7] no solo previene la ceguera, sino que abre la puerta a detectar señales tempranas de enfermedades cardiovasculares, metabólicas o neurológicas antes de que presenten síntomas sistémicos.[^04_problematica-6]
 :::
 
 [^04_problematica-4]: @sarki_automatic_2020 — Señala que la detección temprana puede evitar el desarrollo de enfermedad ocular diabética en una alta proporción de pacientes y reducir el riesgo de pérdida permanente de la visión.
 
 [^04_problematica-5]: @nuzzi_impact_2021 — Explica que la teleoftalmología, combinada con inteligencia artificial, puede ampliar el cribado, reducir los tiempos de espera y facilitar la atención especializada en regiones remotas.
 
-[^04_problematica-6]: @irodi_evolution_2026 — Describe cómo los biomarcadores oculares pueden revelar señales de enfermedades cardiovasculares, metabólicas y neurodegenerativas, y cómo la inteligencia artificial amplía este potencial diagnóstico.
+[^04_problematica-6]: @irodi_evolution_2026 — Describe cómo los biomarcadores oculares pueden revelar señales de enfermedades cardiovasculares, metabólicas y neurodegenerativas, y cómo la inteligencia artificial amplía este potencial diagnóstico. Se analizan vasos retinales, pequeñas lesiones y grosor de capas nerviosas mediante fotografía del fondo de ojo u OCT; estos hallazgos sugieren riesgo, pero no confirman un diagnóstico por sí solos.
+
+[^04_problematica-7]: **OCT** (*Tomografía de Coherencia Óptica*) es un examen no invasivo que usa luz para crear imágenes en corte de las capas de la retina. Permite detectar hinchazón, acumulación de líquido y alteraciones estructurales que una fotografía común no siempre muestra.

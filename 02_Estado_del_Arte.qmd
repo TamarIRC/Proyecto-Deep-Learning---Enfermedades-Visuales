@@ -116,17 +116,17 @@ Estudio retiniano mediante tomografía de coherencia óptica (OCT).
 
 -   K-means.[^02_estado_del_arte-6]
 
--   Extracción manual de características.[^02_estado_del_arte-7]
+-   Características diseñadas manualmente.[^02_estado_del_arte-7]
 
-[^02_estado_del_arte-3]: @sarhan_machine_2020 — Revisa la aplicación de técnicas de *Machine Learning* para el diagnóstico y procesamiento de imágenes oftalmológicas.
+[^02_estado_del_arte-3]: @sarhan_machine_2020 — Revisa el uso de *Machine Learning* para detectar y graduar retinopatía diabética, degeneración macular y glaucoma, además de segmentar vasos, capas retinales y líquido.
 
-[^02_estado_del_arte-4]: @raschka_python_2019 — Presenta las máquinas de vectores de soporte como modelos de clasificación basados en la maximización del margen y el uso de funciones kernel.
+[^02_estado_del_arte-4]: [@raschka_python_2019; @sarki_automatic_2020] — La SVM separa clases maximizando el margen. En retinografías se ha aplicado después de extraer características para clasificar etapas de gravedad de retinopatía diabética.
 
-[^02_estado_del_arte-5]: @sarki_automatic_2020 — Documenta el uso de Random Forest como clasificador, incluyendo su combinación con modelos convolucionales para detectar enfermedades oculares.
+[^02_estado_del_arte-5]: @sarki_automatic_2020 — Documenta Random Forest como clasificador combinado con CNN: se utilizó, por ejemplo, para detectar retinopatía diabética y glaucoma a partir de imágenes de fondo de ojo y OCT.
 
-[^02_estado_del_arte-6]: @raschka_python_2019 — Explica K-means como un método de aprendizaje no supervisado que agrupa observaciones según su similitud.
+[^02_estado_del_arte-6]: [@raschka_python_2019; @nazir_retinal_2020] — K-means agrupa elementos similares. En imágenes retinales, una variante llamada *fuzzy k-means* se usa para segmentar regiones candidatas a lesión; no realiza el diagnóstico final por sí sola.
 
-[^02_estado_del_arte-7]: @sarhan_machine_2020 — Distingue entre características definidas manualmente y características extraídas automáticamente mediante redes convolucionales en imágenes oftalmológicas.
+[^02_estado_del_arte-7]: @sarki_automatic_2020 — Algunos enfoques clásicos emplean características diseñadas manualmente, como gradientes, formas locales y color, antes de aplicar un clasificador.
 
 ------------------------------------------------------------------------
 
@@ -134,27 +134,27 @@ Estudio retiniano mediante tomografía de coherencia óptica (OCT).
 
 -   **Deep Learning** y **Redes Neuronales Convolucionales (CNN)** para analizar imágenes oculares.[^02_estado_del_arte-8]
 
--   Desde 2016–2017, algunos sistemas alcanzaron un **rendimiento diagnóstico comparable al de evaluadores profesionales**.[^02_estado_del_arte-9]
+-   Desde 2016–2017, algunos sistemas lograron un **rendimiento evaluado frente a evaluadores profesionales**.[^02_estado_del_arte-9]
 
 -   **Transfer Learning** para adaptar redes preentrenadas al diagnóstico de enfermedades oculares.[^02_estado_del_arte-10]
 
 -   **Interpretabilidad del modelo** para comprender qué información sustenta sus predicciones.[^02_estado_del_arte-11]
 
--   **Modelos fundacionales y generalizables**, capaces de adaptarse a diferentes tareas y conjuntos de datos oftalmológicos.[^02_estado_del_arte-12]
+-   **Modelos fundacionales y visión-lenguaje**, en exploración para adaptarse a diferentes tareas y conjuntos de datos oftalmológicos.[^02_estado_del_arte-12]
 
 -   **Diseño responsable e integración clínica de la IA**, considerando validación, privacidad, equidad y supervisión profesional.[^02_estado_del_arte-13]
 
-[^02_estado_del_arte-8]: @perdomo_charry_systematic_2019 — Revisa el uso exitoso de métodos de *Deep Learning*, especialmente CNN, para analizar imágenes de fondo de ojo y OCT y detectar enfermedades oculares.
+[^02_estado_del_arte-8]: @perdomo_charry_systematic_2019 — Las CNN procesan fotografías de fondo de ojo y OCT para aprender patrones visuales y apoyar la detección, clasificación y segmentación de signos clínicos oculares.
 
-[^02_estado_del_arte-9]: @ting_development_2017 — Valida un sistema de *Deep Learning* con 494 661 imágenes retinianas y reporta alta sensibilidad y especificidad para detectar retinopatía diabética, glaucoma y degeneración macular, utilizando evaluadores profesionales como referencia.
+[^02_estado_del_arte-9]: @ting_development_2017 — El sistema analizó fotografías retinianas para detectar retinopatía diabética referible o amenazante para la visión, glaucoma posible y degeneración macular; su rendimiento se evaluó frente a especialistas, oftalmólogos y evaluadores entrenados.
 
-[^02_estado_del_arte-10]: @sarki_automatic_2020 — Señala que 38 de los 65 estudios revisados utilizaron *Transfer Learning* para detectar enfermedades oculares mediante imágenes de fondo de ojo.
+[^02_estado_del_arte-10]: @sarki_automatic_2020 — *Transfer Learning* reutiliza una CNN entrenada previamente: sus primeras capas aportan patrones generales, como bordes y texturas, y luego se ajusta para reconocer vasos, exudados o enfermedades oculares con menos datos.
 
-[^02_estado_del_arte-11]: @jin_artificial_2022 — Identifica la explicabilidad y la confianza clínica como desafíos centrales antes de incorporar modelos de IA a la práctica oftalmológica.
+[^02_estado_del_arte-11]: @jin_artificial_2022 — La interpretabilidad busca mostrar qué regiones influyeron en la predicción, por ejemplo mediante mapas de calor. Sin embargo, estas herramientas aún no explican por completo cómo decide el modelo, por lo que la supervisión clínica sigue siendo necesaria.
 
-[^02_estado_del_arte-12]: @irodi_evolution_2026 — Describe el desarrollo de modelos fundacionales y modelos visión-lenguaje entrenados con datos diversos para generalizar entre distintas tareas y dominios oftalmológicos.
+[^02_estado_del_arte-12]: @irodi_evolution_2026 — Los modelos fundacionales y visión-lenguaje se están explorando para aprender de datos diversos y relacionar imágenes con texto clínico; prometen adaptarse a varias tareas, pero su utilidad clínica rutinaria aún debe validarse.
 
-[^02_estado_del_arte-13]: [@jin_artificial_2022; @dash_advancements_2024] — Señalan que la adopción clínica requiere validación externa, protección de la privacidad, evaluación ética, interpretabilidad e integración segura en los flujos de trabajo médicos.
+[^02_estado_del_arte-13]: [@jin_artificial_2022; @dash_advancements_2024] — La aplicación clínica requiere datos amplios y diversos, protección de la privacidad, evaluación de sesgos, interpretabilidad, validación en distintas poblaciones e integración con supervisión profesional.
 
 ## Desempeño en la Literatura {.scrollable .smaller}
 

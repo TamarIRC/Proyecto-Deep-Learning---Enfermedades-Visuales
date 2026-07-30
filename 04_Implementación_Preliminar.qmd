@@ -4,10 +4,11 @@
 
 Antes de que el modelo pueda "ver" las imágenes, debemos estandarizarlas. Nuestro flujo de preprocesamiento incluye:
 
+- **División de datos:** Separar la base en conjuntos de entrenamiento, validación y prueba antes de aplicar aumento de datos.
 - **Redimensionamiento (*Resize*):** Ajustar todas las imágenes a un tamaño uniforme (ej. 224×224 píxeles).[^04_implementación_preliminar-1]
 - **Recorte (*Cropping*):** Eliminar los bordes negros innecesarios de las retinografías para enfocar la región de interés.[^04_implementación_preliminar-2]
 - **Normalización:** Escalar los valores de los píxeles de 0–255 al rango `[0,1]` para facilitar el entrenamiento del modelo.[^04_implementación_preliminar-3]
-- **Data Augmentation:** Aplicar rotaciones, reflejos horizontales (*flips*) y cambios de brillo para aumentar artificialmente el conjunto de datos y reducir el *overfitting*.[^04_implementación_preliminar-4]
+- **Data Augmentation:** Aplicar rotaciones, reflejos horizontales (*flips*) y cambios de brillo para aumentar artificialmente el conjunto de datos y reducir el *overfitting*.[^04_implementación_preliminar-4][^04_implementación_preliminar-14]
 
 ## 2. ¿Por qué Redes Neuronales Convolucionales (CNN)? {.scrollable .smaller}
 
@@ -65,5 +66,7 @@ No construiremos la red desde cero. Utilizaremos **Transfer Learning** con una a
 [^04_implementación_preliminar-12]: @sarki_convolutional_2018 — Implementa capas completamente conectadas que reciben las características extraídas y realizan la clasificación multiclase de enfermedades oculares.
 
 [^04_implementación_preliminar-13]: [@sarki_convolutional_2018; @zhang_dive_2021] — Sarki et al. utilizan *Softmax* para clasificar cinco clases de enfermedades oculares; Zhang et al. explican el uso de *Softmax* para clases excluyentes y de *Sigmoid* para salidas binarias independientes.
+
+[^04_implementación_preliminar-14]: **Nota:** El aumento de datos se aplica únicamente al conjunto de entrenamiento, para evitar que imágenes derivadas de un mismo caso aparezcan en validación o prueba y alteren la evaluación del modelo.
 
 # Referencias
