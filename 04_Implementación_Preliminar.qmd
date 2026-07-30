@@ -22,6 +22,8 @@ Para seleccionar la arquitectura, comparamos su adecuación al tipo de entrada d
 
 - **Precaución metodológica:** Aunque son adecuadas para imágenes, las CNN pueden sufrir sobreajuste cuando se entrenan con conjuntos de datos médicos limitados o desbalanceados. Por ello utilizaremos *Data Augmentation*, *Transfer Learning* y técnicas de regularización.[^04_implementación_preliminar-8]
 
+- **Precaución sobre las etiquetas:** Antes de implementar, se debe definir si la tarea será **multiclase** (una condición por imagen) o **multietiqueta** (varias condiciones por imagen). ODIR permite que una imagen presente más de una condición; esta decisión determina la capa de salida y cómo se interpretan las métricas.
+
 ## 3. Arquitectura y Modelo Predefinido {.scrollable .smaller}
 
 No construiremos la red desde cero. Utilizaremos **Transfer Learning** con una arquitectura probada en el estado del arte (por definir entre **ResNet50** o **VGG16**).
@@ -31,9 +33,9 @@ No construiremos la red desde cero. Utilizaremos **Transfer Learning** con una a
 
 1. **Imagen de entrada:** El modelo recibe una retinografía previamente redimensionada, recortada y normalizada.[^04_implementación_preliminar-9]
 
-2. **Extracción de características (*backbone* preentrenado):** La CNN reutiliza conocimientos aprendidos previamente para identificar bordes, texturas, formas y posibles anomalías en el ojo.[^04_implementación_preliminar-10]
+2. **Extracción de características:** La CNN reutiliza conocimientos aprendidos previamente para identificar bordes, texturas, formas y posibles anomalías en el ojo.[^04_implementación_preliminar-10]
 
-3. **Resumen de características (*Flatten* o *Global Pooling*):** Los patrones detectados se convierten en un conjunto compacto de números, llamado vector, que puede ser procesado por el clasificador.[^04_implementación_preliminar-11]
+3. **Resumen de características:** Los patrones detectados se convierten en un conjunto compacto de números, llamado vector, que puede ser procesado por el clasificador.[^04_implementación_preliminar-11]
 
 4. **Clasificación (capas densas):** Estas capas se entrenan con la base ODIR para aprender qué combinaciones de características corresponden a cada enfermedad.[^04_implementación_preliminar-12]
 
